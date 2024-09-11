@@ -3,79 +3,66 @@ Circuit: * D:\Users\denis\OneDrive\Escritorio\-\Estudios\Facultad\Actuales\Talle
 Direct Newton iteration for .op point succeeded.
 Semiconductor Device Operating Points:
                         --- Bipolar Transistors ---
-Name:       q6          q5          q8          q7          q4
-Model:    tip41c      tip42c      bc547c      bc547c      bc547c
-Ib:       1.71e-04   -5.35e-03    3.83e-06    3.83e-06    1.63e-06
-Ic:       5.35e-03   -3.14e-01    1.72e-03    1.72e-03    7.73e-04
-Vbe:      5.21e-01   -7.60e-01    6.36e-01    6.36e-01    6.14e-01
-Vbc:     -1.88e+00    2.40e+00    5.48e-02    0.00e+00   -2.51e+00
-Vce:      2.40e+00   -3.16e+00    5.82e-01    6.36e-01    3.13e+00
-BetaDC:   3.13e+01    5.86e+01    4.50e+02    4.50e+02    4.75e+02
-Gm:       1.84e-01    1.02e+01    6.51e-02    6.51e-02    2.94e-02
-Rpi:      2.36e+02    4.94e+00    6.84e+03    6.84e+03    1.61e+04
-Rx:       4.54e+00    1.00e-01    1.00e+00    1.00e+00    1.00e+00
-Ro:       1.90e+04    3.26e+02    3.05e+04    3.05e+04    7.12e+04
-Cbe:      8.16e-09    2.37e-07    6.34e-11    6.34e-11    4.52e-11
-Cbc:      6.57e-11    3.45e-10    3.00e-12    2.74e-12    1.32e-12
+Name:       q5          q6          q4          q3          q2
+Model:    bc557b      bc547c      bc547c      bc547c      bc557c
+Ib:      -3.59e-02    5.78e-04    2.31e-07    2.15e-06   -1.61e-04
+Ic:      -9.14e-01    3.59e-02    1.13e-04    1.04e-03   -6.91e-04
+Vbe:     -1.50e+00    7.35e-01    5.62e-01    6.21e-01   -6.43e-01
+Vbc:      1.05e-01    6.30e-01   -4.34e+00   -3.65e+00   -6.29e-01
+Vce:     -1.60e+00    1.05e-01    4.90e+00    4.28e+00   -1.42e-02
+BetaDC:   2.54e+01    6.22e+01    4.90e+02    4.84e+02    4.28e+00
+Gm:       1.82e+01    1.12e+00    4.32e-03    3.96e-02    3.06e-02
+Rpi:      7.26e-01    2.25e+02    1.14e+05    1.22e+04    4.54e+03
+Rx:       1.00e+00    1.00e+00    1.00e+00    1.00e+00    1.00e+00
+Ro:       2.20e+01    6.87e+00    5.03e+05    5.39e+04    1.64e+01
+Cbe:      4.76e-08    1.79e-09    3.03e-11    5.04e-11    7.97e-11
+Cbc:      7.61e-11    1.88e-11    1.15e-12    1.20e-12    1.11e-11
 Cjs:      0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
-BetaAC:   4.34e+01    5.03e+01    4.45e+02    4.45e+02    4.73e+02
-Cbx:      1.61e-11    0.00e+00    1.85e-12    1.69e-12    8.14e-13
-Ft:       3.56e+06    6.82e+06    1.52e+08    1.53e+08    9.89e+07
+BetaAC:   1.32e+01    2.53e+02    4.91e+02    4.81e+02    1.39e+02
+Cbx:      4.95e-11    1.16e-11    7.05e-13    7.38e-13    6.53e-12
+Ft:       6.04e+07    9.82e+07    2.14e+07    1.20e+08    5.01e+07
 
-Name:       q3          q2          q1
-Model:    bc547c      bc557c      bc557c
-Ib:       1.94e-06   -1.99e-06   -2.12e-06
-Ic:       9.45e-04   -9.45e-04   -9.41e-04
-Vbe:      6.18e-01   -6.15e-01   -6.17e-01
-Vbc:     -4.09e+00    1.58e+00    0.00e+00
-Vce:      4.71e+00   -2.20e+00   -6.17e-01
-BetaDC:   4.88e+02    4.74e+02    4.44e+02
-Gm:       3.59e-02    3.56e-02    3.54e-02
-Rpi:      1.35e+04    1.33e+04    1.25e+04
-Rx:       1.00e+00    1.00e+00    1.00e+00
-Ro:       5.99e+04    2.67e+04    2.51e+04
-Cbe:      4.86e-11    5.04e-11    5.04e-11
-Cbc:      1.17e-12    2.70e-12    4.91e-12
-Cjs:      0.00e+00    0.00e+00    0.00e+00
-BetaAC:   4.85e+02    4.72e+02    4.41e+02
-Cbx:      7.17e-13    1.60e-12    2.90e-12
-Ft:       1.13e+08    1.04e+08    9.69e+07
-
-                        --- VDMOSFET Transistors ---
-Name:          m1
-Model:       2n7002
-Id:          4.29e-11
-Vgs:         1.00e-01
-Vds:         5.53e-01
-Vth:         1.60e+00
-Gm:          1.59e-15
-Gds:         0.00e+00
-Cgs:         5.00e-11
-Cgd:         4.23e-11
-Cbody:       4.01e-11
+Name:       q1
+Model:    bc557c
+Ib:      -1.98e-06
+Ic:      -8.79e-04
+Vbe:     -6.15e-01
+Vbc:      0.00e+00
+Vce:     -6.15e-01
+BetaDC:   4.44e+02
+Gm:       3.31e-02
+Rpi:      1.34e+04
+Rx:       1.00e+00
+Ro:       2.69e+04
+Cbe:      4.91e-11
+Cbc:      4.91e-12
+Cjs:      0.00e+00
+BetaAC:   4.42e+02
+Cbx:      2.90e-12
+Ft:       9.26e+07
 
 
 
-vo1rc: v(vo)=60.2352 at 100
-vo2rc: v(vo)=3.01176 at 5
-io1rc: i(rl)=6.02352 at 100
-io2rc: i(rl)=0.301176 at 5
-regcar: (-(vo2rc-vo1rc)/(io2rc-io1rc))=-10
+vo1rc: v(vo)=4.99426 at 100
+vo2rc: v(vo)=4.74835 at 5
+io1rc: i(rl)=0.0499426 at 100
+io2rc: i(rl)=0.949669 at 5
+regcar: (-(vo2rc-vo1rc)/(io2rc-io1rc))=0.273322
 
 
-Date: Sun Sep 08 22:00:03 2024
-Total elapsed time: 0.085 seconds.
+Date: Fri Sep 06 13:00:52 2024
+Total elapsed time: 1.470 seconds.
 
 tnom = 27
 temp = 27
 method = trap
-totiter = 17
+totiter = 10
 traniter = 0
 tranpoints = 0
 accept = 0
 rejected = 0
-matrix size = 44
-fillins = 26
+matrix size = 30
+fillins = 22
 solver = Normal
-Matrix Compiler1: 4.64 KB object code size
-Matrix Compiler2: 4.27 KB object code size
+Matrix Compiler1: 3.47 KB object code size
+Matrix Compiler2: 3.01 KB object code size
