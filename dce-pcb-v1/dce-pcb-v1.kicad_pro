@@ -416,7 +416,7 @@
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
       "pin_not_driven": "error",
-      "pin_to_pin": "error",
+      "pin_to_pin": "warning",
       "power_pin_not_driven": "error",
       "similar_labels": "warning",
       "simulation_model_issue": "ignore",
@@ -431,7 +431,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "dce-pcb.kicad_pro",
+    "filename": "dce-pcb-v1.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -465,7 +465,7 @@
     "last_paths": {
       "gencad": "",
       "idf": "",
-      "netlist": "",
+      "netlist": "../../../../../../../../../../../Program Files/KiCad/8.0/",
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
@@ -542,20 +542,8 @@
         },
         {
           "group_by": false,
-          "label": "Sim.Library",
-          "name": "Sim.Library",
-          "show": false
-        },
-        {
-          "group_by": false,
           "label": "Sim.Params",
           "name": "Sim.Params",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Value2",
-          "name": "Value2",
           "show": false
         },
         {
@@ -599,6 +587,14 @@
       "version": 1
     },
     "net_format_name": "",
+    "ngspice": {
+      "fix_include_paths": true,
+      "meta": {
+        "version": 0
+      },
+      "model_mode": 4,
+      "workbook_filename": ""
+    },
     "page_layout_descr_file": "empty.kicad_wks",
     "plot_directory": "",
     "spice_current_sheet_as_root": false,
@@ -612,7 +608,7 @@
   },
   "sheets": [
     [
-      "8b3bb39f-23c7-4336-8668-8922cf198c0f",
+      "e6ededfa-1272-42e1-ab55-13acb1f29d6e",
       ""
     ]
   ],
