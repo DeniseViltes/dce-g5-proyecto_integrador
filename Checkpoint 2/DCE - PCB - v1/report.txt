@@ -1,0 +1,5 @@
+Info: Huella actualizada C8 (Capacitor_THT:C_Disc_D3.4mm_W2.1mm_P2.50mm): : (sin cambios)
+Info: Huella actualizada C5 (Capacitor_THT:C_Disc_D3.4mm_W2.1mm_P2.50mm): : (sin cambios)
+Info: Huella actualizada C6 (Capacitor_THT:C_Disc_D3.4mm_W2.1mm_P2.50mm): : (sin cambios)
+Info: Huella actualizada C7 (Capacitor_THT:C_Disc_D3.4mm_W2.1mm_P2.50mm): : (sin cambios)
+Info: Huella actualizada C4 (Capacitor_THT:C_Disc_D3.4mm_W2.1mm_P2.50mm): : (sin cambios)
