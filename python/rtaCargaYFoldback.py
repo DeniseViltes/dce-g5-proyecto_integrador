@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 plt.rcParams['text.usetex'] = True
 
-#color='#5ce9ff'
+
 
 def procesarPuntos(nombreArchivo):
     datos_simul = np.genfromtxt(nombreArchivo, delimiter='\t', skip_header=1)
