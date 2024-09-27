@@ -20,7 +20,7 @@ plt.grid(True)
 
 ax1.set_xlabel('Tiempo [m s]')
 ax1.set_ylabel('Tensión [V]',color = 'darkorchid')
-plt.title('Etapa amplificadora con un transistor')
+plt.title('Respuesta temporal del lazo de tension')
 
 plot_1 = ax1.plot(tiempo*10**3, vf3_R10,color='darkorchid',label = '$V_o = 3V$' ,linewidth=3,linestyle='dashed')
 
@@ -45,7 +45,7 @@ plt.grid(True)
 
 ax1.set_xlabel('Tiempo [m s]')
 ax1.set_ylabel('Tensión [V]',color = 'darkorchid')
-plt.title('Etapa amplificadora con un transistor')
+plt.title('Respuesta temporal del lazo de corriente')
 
 plot_1 = ax1.plot(tiempo2*10**3, Vlc_R4_4,color='darkorchid',label = '$V_o = 3V$',linewidth=3,linestyle='dashed')
 
@@ -58,6 +58,9 @@ labels = [l.get_label() for l in lns]
 plt.legend(lns, labels, loc=0)
 
 plt.savefig('graficos/TransitoriosGananciaCorriente.png')
+
+
+
 
 plt.show()
 

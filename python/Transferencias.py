@@ -19,10 +19,17 @@ def buscar_margen_fase(frecuencia, magnitud, fase):
     return frec_cruce, margen_fase
 
 
-def graficarTransferencia(nombreArchivo, titulo,nombreImagen):
+def graficarTransferencia(nombreArchivo, titulo,nombreImagen,corregirFase):
     freq,mag,fase = procesarPuntos(nombreArchivo)
 
     frec_cruce, margen_fase = buscar_margen_fase(freq, mag, fase)
+
+
+    if corregirFase:
+        fase =np.degrees(np.unwrap(np.radians(fase)))
+    if np.min(fase)<-300:
+        fase +=360
+
 
 
     fig1, ax1 = plt.subplots()
@@ -42,7 +49,7 @@ def graficarTransferencia(nombreArchivo, titulo,nombreImagen):
 
     ax2 = ax1.twinx()
     ax2.set_ylabel('Fase [°]',color = '#e377c2')
-    plot_2 = ax2.plot(freq, fase,color='#e377c2' ,linewidth=1,linestyle='dashed')
+    plot_2 = ax2.plot(freq,fase,color='#e377c2' ,linewidth=1,linestyle='dashed')
 
     # for fc in frec_cruce:
     #     ax1.axvline(x=fc, color='r', linestyle='--', label='Cruce de 0 dB' if fc == frec_cruce[0] else "")
@@ -60,31 +67,73 @@ def graficarTransferencia(nombreArchivo, titulo,nombreImagen):
     plt.tight_layout()
     plt.savefig(nombreImagen)
 
-# para 5V
-titulo = 'Respuesta en frecuencia para $V_O = 5V$ y $R_L= 10 \Omega$'
-nombreImagen='graficos/TransferenciaLazoTensionSinCompensar5_RL10.png'
-graficarTransferencia('resources/Sin-compensar/Vf5-Rl10.txt',titulo,nombreImagen)
+# # para 5V
+# titulo = 'Respuesta en frecuencia para $V_O = 5V$ y $R_L= 10 \Omega$'
+# nombreImagen='graficos/TransferenciaLazoTensionSinCompensar5_RL10.png'
+# graficarTransferencia('resources/Sin-compensar/Vf5-Rl10.txt',titulo,nombreImagen,False)
+#
+# titulo = 'Respuesta en frecuencia para $V_O = 5V$ y $R_L= 6,8 \Omega$'
+# nombreImagen='graficos/TransferenciaLazoCorrienteSinCompensar5_RL-68.png'
+# graficarTransferencia('resources/Sin-compensar/Vf5-Rl68.txt',titulo,nombreImagen,False)
+#
+# titulo = 'Respuesta en frecuencia para $V_O = 5V$ y $R_L= 8 \Omega$'
+# nombreImagen='graficos/TransferenciaLazoTensionSinCompensar5_RL-8.png'
+# graficarTransferencia('resources/Sin-compensar/Vf5-Rl8.txt',titulo,nombreImagen,False)
+#
+# # para 3.3V
+# titulo = 'Respuesta en frecuencia para $V_O = 3.3V$ y $R_L= 10 \Omega$'
+# nombreImagen='graficos/TransferenciaLazoTensionSinCompensar3_RL10.png'
+# graficarTransferencia('resources/Sin-compensar/Vf3-Rl10.txt',titulo,nombreImagen,False)
+#
+# titulo = 'Respuesta en frecuencia para $V_O = 3.3V$ y $R_L= 6 \Omega$'
+# nombreImagen='graficos/TransferenciaLazoCorrienteSinCompensar3_RL-6.png'
+# graficarTransferencia('resources/Sin-compensar/Vf3-Rl6.txt',titulo,nombreImagen,False)
+#
+# titulo = 'Respuesta en frecuencia para $V_O = 3.3V$ y $R_L= 4,4 \Omega$'
+# nombreImagen='graficos/TransferenciaLazoTensionSinCompensar3_RL-44.png'
+# graficarTransferencia('resources/Sin-compensar/Vf3-Rl44.txt',titulo,nombreImagen,False)
+#
+#
+# # Compensado
+# titulo = 'Respuesta en frecuencia para $V_O = 5V$ y $R_L= 10 \Omega$'
+# nombreImagen='graficos/TransferenciaLazoTensionCompensado5_RL-10.png'
+# graficarTransferencia('resources/Compensado/Vf5-Rl10.txt',titulo,nombreImagen,True)
+# #
+# #
+# titulo = 'Respuesta en frecuencia para $V_O = 3V$ y $R_L= 10 \Omega$'
+# nombreImagen='graficos/TransferenciaLazoTensionCompensado3_RL-10.png'
+# graficarTransferencia('resources/Compensado/Vf3-Rl10.txt',titulo,nombreImagen,True)
+#
+#
+# titulo = 'Respuesta en frecuencia para $V_O = 5V$ y $R_L= 6,8 \Omega$'
+# nombreImagen='graficos/TransferenciaLazoCorrienteCompensado5.png'
+# graficarTransferencia('resources/Compensado/Vlc-Rl66.txt',titulo,nombreImagen, True)
+#
+#
+# titulo = 'Respuesta en frecuencia para $V_O = 3V$ y $R_L= 4,4 \Omega$'
+# nombreImagen='graficos/TransferenciaLazoCorrienteCompensado3.png'
+# graficarTransferencia('resources/Compensado/Vlc-Rl425.txt',titulo,nombreImagen, True)
+#
 
-titulo = 'Respuesta en frecuencia para $V_O = 5V$ y $R_L= 6,8 \Omega$'
-nombreImagen='graficos/TransferenciaLazoCorrienteSinCompensar5_RL-68.png'
-graficarTransferencia('resources/Sin-compensar/Vf5-Rl68.txt',titulo,nombreImagen)
 
-titulo = 'Respuesta en frecuencia para $V_O = 5V$ y $R_L= 8 \Omega$'
-nombreImagen='graficos/TransferenciaLazoTensionSinCompensar5_RL-8.png'
-graficarTransferencia('resources/Sin-compensar/Vf5-Rl8.txt',titulo,nombreImagen)
 
-# para 3.3V
-titulo = 'Respuesta en frecuencia para $V_O = 3.3V$ y $R_L= 10 \Omega$'
-nombreImagen='graficos/TransferenciaLazoTensionSinCompensar3_RL10.png'
-graficarTransferencia('resources/Sin-compensar/Vf3-Rl10.txt',titulo,nombreImagen)
+freq5,mag5,fase5 = procesarPuntos('resources/Sin-compensar/Vf5-Rlinf.txt')
+freq3,mag3,fase3 = procesarPuntos('resources/Sin-compensar/Vf3-Rlinf.txt')
 
-titulo = 'Respuesta en frecuencia para $V_O = 3.3V$ y $R_L= 6 \Omega$'
-nombreImagen='graficos/TransferenciaLazoCorrienteSinCompensar3_RL-6.png'
-graficarTransferencia('resources/Sin-compensar/Vf3-Rl6.txt',titulo,nombreImagen)
 
-titulo = 'Respuesta en frecuencia para $V_O = 3.3V$ y $R_L= 4,4 \Omega$'
-nombreImagen='graficos/TransferenciaLazoTensionSinCompensar3_RL-44.png'
-graficarTransferencia('resources/Sin-compensar/Vf3-Rl44.txt',titulo,nombreImagen)
+
+fig2 = plt.figure()
+plt.grid(True)
+
+plt.xlabel('Frecuencia [Hz]')
+plt.ylabel('Ganancia [dB]')
+plt.title('Ganancia del lazo de tensión')
+plt.semilogx(freq5,mag5,color='darkorchid',label = 'Vo = 5 V',linewidth=3)
+plt.semilogx(freq3, mag3, color='#e377c2', label = 'Vo = 3,3 V',linewidth=3)
+
+plt.legend()
+
+plt.savefig('graficos/Ganancia de lazo.png')
 
 
 plt.show()
