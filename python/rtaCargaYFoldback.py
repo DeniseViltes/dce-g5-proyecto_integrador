@@ -11,8 +11,8 @@ def procesarPuntos(nombreArchivo):
     z = datos_simul[:, 2]
     return x, y,z
 
-RL,Vo3,Io3=procesarPuntos('resources/stepRL3V.txt')
-RL,Vo5,Io5=procesarPuntos('resources/stepRL5V.txt')
+RL5,Vo5,Io5=procesarPuntos('resources/Sin-compensar/stepRL5V.txt')
+RL3,Vo3,Io3=procesarPuntos('resources/Sin-compensar/stepRL3V.txt')
 
 fig1 = plt.figure()
 plt.grid(True)
@@ -20,8 +20,8 @@ plt.grid(True)
 plt.xlabel('RL [$\Omega$]')
 plt.ylabel('Tensión de salida[V]')
 plt.title('Rectas de carga')
-plt.plot(RL, Vo3,color='darkorchid',label = 'Vo = 3.3V',linewidth=3)
-plt.plot(RL, Vo5, color='#e377c2', label = 'Vo = 5V',linewidth=3)
+plt.plot(RL3, Vo3,color='darkorchid',label = 'Vo = 3.3V',linewidth=3)
+plt.plot(RL5, Vo5, color='#e377c2', label = 'Vo = 5V',linewidth=3)
 
 plt.legend()
 plt.savefig('graficos/rectasDeCarga.png')
@@ -40,7 +40,22 @@ plt.legend()
 plt.savefig('graficos/Foldbacks.png')
 
 
+RL,Vo5,Io5=procesarPuntos('resources/stepRL5V.txt')
+RL,Vo3,Io3=procesarPuntos('resources/stepRL3V.txt')
+
+fig2 = plt.figure()
+plt.grid(True)
+
+plt.xlabel('$I_{RL}$ [mA]')
+plt.ylabel('Tensión de salida [V]')
+plt.title('Foldback Compensado')
+plt.plot(Io3*10**3,Vo3,color='darkorchid',label = 'Vo = 3.3V',linewidth=3)
+plt.plot(Io5*10**3, Vo5, color='#e377c2', label = 'Vo = 5 V',linewidth=3)
+
+plt.legend()
+plt.savefig('graficos/FoldbacksCompensados.png')
 
 
 
 plt.show()
+

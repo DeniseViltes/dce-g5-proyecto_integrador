@@ -8,32 +8,56 @@ def procesarPuntos(nombreArchivo):
     return x, y
 
 
-tiempo, vo3_r1 = procesarPuntos('resources/transitorio-foldback3-Rl1.txt')
-tiempo3, vo3_r4_3 = procesarPuntos('resources/transitorio-foldback3-Rl4-3.txt')
 
-tiempo4, vo5_r1 = procesarPuntos('resources/transitorio-foldback5-Rl1.txt')
-tiempo6, vo5_r6_6 = procesarPuntos('resources/transitorio-foldback5-Rl5.txt')
+tiempo, vf3_R10 = procesarPuntos('resources/transitorio-Vf3-R10.txt')
+
+tiempo2, vf5_R10 = procesarPuntos('resources/transitorio-Vf5-R10.txt')
 
 
-fig1 = plt.figure()
+
+fig1, ax1 = plt.subplots()
 plt.grid(True)
 
-plt.xlabel('Tiempo [ms]')
-plt.ylabel('Tensión de salida [V]')
-plt.title('Respuesta al escalón con Foldback activado para $V_o= 3 V$')
-plt.plot(tiempo*10**3, vo3_r1,color='darkorchid',linewidth=3)
+ax1.set_xlabel('Tiempo [m s]')
+ax1.set_ylabel('Tensión [V]',color = 'darkorchid')
+plt.title('Etapa amplificadora con un transistor')
 
-plt.savefig('graficos/TransitorioFoldaback3.png')
+plot_1 = ax1.plot(tiempo*10**3, vf3_R10,color='darkorchid',label = '$V_o = 3V$' ,linewidth=3,linestyle='dashed')
+
+ax2 = ax1.twinx()
+ax2.set_ylabel('Tensión [mV]',color = '#e377c2')
+plot_2 = ax2.plot(tiempo2*10**3, vf5_R10,color='#e377c2',label = '$V_o = 5V$',linewidth=1)
+
+lns = plot_1 + plot_2
+labels = [l.get_label() for l in lns]
+plt.legend(lns, labels, loc=0)
+
+plt.savefig('graficos/TransitoriosGananciaTension.png')
 
 
-fig2 = plt.figure()
+tiempo, Vlc_R6_8 = procesarPuntos('resources/transitorio-Vlc-R6.8.txt')
+tiempo2, Vlc_R4_4 = procesarPuntos('resources/transitorio-Vlc-R44.txt')
+
+
+
+fig2, ax1 = plt.subplots()
 plt.grid(True)
 
-plt.xlabel('Tiempo [ms]')
-plt.ylabel('Tensión de salida [V]')
-plt.title('Respuesta al escalón con Foldback activado para $V_o= 5 V$')
-plt.plot(tiempo4*10**3, vo5_r1,color='#e377c2',linewidth=3)
+ax1.set_xlabel('Tiempo [m s]')
+ax1.set_ylabel('Tensión [V]',color = 'darkorchid')
+plt.title('Etapa amplificadora con un transistor')
 
-plt.savefig('graficos/TransitorioFoldaback5.png')
+plot_1 = ax1.plot(tiempo2*10**3, Vlc_R4_4,color='darkorchid',label = '$V_o = 3V$',linewidth=3,linestyle='dashed')
+
+ax2 = ax1.twinx()
+ax2.set_ylabel('Tensión [V]',color = '#e377c2')
+plot_2 = ax2.plot(tiempo*10**3, Vlc_R6_8,color='#e377c2',label = '$V_o = 5V$' ,linewidth=1)
+
+lns = plot_1 + plot_2
+labels = [l.get_label() for l in lns]
+plt.legend(lns, labels, loc=0)
+
+plt.savefig('graficos/TransitoriosGananciaCorriente.png')
+
 plt.show()
 
