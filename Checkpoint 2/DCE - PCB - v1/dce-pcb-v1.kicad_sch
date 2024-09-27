@@ -3981,7 +3981,7 @@
 		)
 		(uuid "690b2e58-f5b6-4a71-b69b-6b460fb39d23")
 	)
-	(label "Vref"
+	(label "Vreg"
 		(at 251.46 161.29 90)
 		(fields_autoplaced yes)
 		(effects
@@ -4091,7 +4091,7 @@
 		)
 		(uuid "d1279d0f-0800-4abe-a63d-fa040586d73a")
 	)
-	(label "Vreg"
+	(label "Vref"
 		(at 248.92 153.67 90)
 		(fields_autoplaced yes)
 		(effects
