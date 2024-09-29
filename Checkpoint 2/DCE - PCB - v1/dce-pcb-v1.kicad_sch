@@ -4394,7 +4394,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm"
+		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm"
 			(at 265.43 170.4848 0)
 			(effects
 				(font
@@ -4463,7 +4463,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92L_Inline"
+		(property "Footprint" "Package_TO_SOT_THT:TO-92L_Inline_Wide"
 			(at 142.24 38.1 0)
 			(effects
 				(font
@@ -5125,7 +5125,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm"
+		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm"
 			(at 265.43 179.3748 0)
 			(effects
 				(font
@@ -5474,7 +5474,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92L_Inline"
+		(property "Footprint" "Package_TO_SOT_THT:TO-92L_Inline_Wide"
 			(at 121.92 130.81 0)
 			(effects
 				(font
@@ -5916,7 +5916,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92L_Inline"
+		(property "Footprint" "Package_TO_SOT_THT:TO-92L_Inline_Wide"
 			(at 92.71 67.31 0)
 			(effects
 				(font
@@ -6263,7 +6263,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92L_Inline"
+		(property "Footprint" "Package_TO_SOT_THT:TO-92L_Inline_Wide"
 			(at 185.42 85.09 0)
 			(effects
 				(font
@@ -6333,6 +6333,70 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 78.74 102.87 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6da48e62-aa38-44e1-84e0-362c3bfd1885")
+		(property "Reference" "TP5"
+			(at 84.328 106.172 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 84.582 104.648 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm"
+			(at 78.74 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 78.74 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 78.74 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "38a3c907-c31b-4320-a489-1f747e9bd9ce")
+		)
+		(instances
+			(project "dce-pcb-v1"
+				(path "/e6ededfa-1272-42e1-ab55-13acb1f29d6e"
+					(reference "TP5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "ltspice:npn")
 		(at 73.66 88.9 0)
 		(unit 1)
@@ -6359,7 +6423,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92L_Inline"
+		(property "Footprint" "Package_TO_SOT_THT:TO-92L_Inline_Wide"
 			(at 73.66 88.9 0)
 			(effects
 				(font
@@ -6542,7 +6606,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92L_Inline"
+		(property "Footprint" "Package_TO_SOT_THT:TO-92L_Inline_Wide"
 			(at 64.77 67.31 0)
 			(effects
 				(font
@@ -6982,7 +7046,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92L_Inline"
+		(property "Footprint" "Package_TO_SOT_THT:TO-92L_Inline_Wide"
 			(at 82.55 55.88 0)
 			(effects
 				(font
@@ -7972,7 +8036,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm"
+		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm"
 			(at 265.43 160.3248 0)
 			(effects
 				(font
@@ -8481,7 +8545,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92L_Inline"
+		(property "Footprint" "Package_TO_SOT_THT:TO-92L_Inline_Wide"
 			(at 74.93 55.88 0)
 			(effects
 				(font
@@ -8914,7 +8978,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92L_Inline"
+		(property "Footprint" "Package_TO_SOT_THT:TO-92L_Inline_Wide"
 			(at 35.56 88.9 0)
 			(effects
 				(font
@@ -9287,7 +9351,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm"
+		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm"
 			(at 265.43 152.7048 0)
 			(effects
 				(font
@@ -9354,7 +9418,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm"
+		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm"
 			(at 265.43 143.8148 0)
 			(effects
 				(font
