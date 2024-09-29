@@ -2113,6 +2113,12 @@
 		)
 	)
 	(junction
+		(at 135.89 134.62)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "07274de4-bf02-4cda-be61-9fb3ef5d34b8")
+	)
+	(junction
 		(at 269.24 180.34)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2131,12 +2137,6 @@
 		(uuid "142186b5-18bb-4e35-a43a-3cd31c1a869e")
 	)
 	(junction
-		(at 110.49 57.15)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "170b90db-48f7-4f94-afbc-0698dcdef525")
-	)
-	(junction
 		(at 160.02 49.53)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2147,6 +2147,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1921ec6b-7b48-45de-9305-4cbbb3144562")
+	)
+	(junction
+		(at 266.7 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2c547bdf-b818-4e66-a427-010fe5280cd5")
 	)
 	(junction
 		(at 139.7 134.62)
@@ -2203,28 +2209,16 @@
 		(uuid "60176904-f4d1-4246-a61a-e2b8fa73f86f")
 	)
 	(junction
-		(at 123.19 71.12)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "63d9c56b-f1d8-4e16-9017-bb9c66c212d4")
-	)
-	(junction
-		(at 266.7 58.42)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6c145efe-1338-4b79-9e6b-a65d22dd2d5a")
-	)
-	(junction
 		(at 30.48 85.09)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6f96cb25-461a-42b0-be98-b8be8cfd8f44")
 	)
 	(junction
-		(at 135.89 134.62)
+		(at 123.19 71.12)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "7145b65a-cb9d-4ea7-85c2-61ea2216190c")
+		(uuid "81096f91-45a8-4459-92f9-593fecce2eef")
 	)
 	(junction
 		(at 101.6 71.12)
@@ -2291,6 +2285,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d20878f7-f25a-4e5b-a003-66a4418f49e2")
+	)
+	(junction
+		(at 110.49 57.15)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d2c3ff54-c46c-4a6f-8495-7ca45acc7cd7")
 	)
 	(junction
 		(at 52.07 144.78)
@@ -2406,16 +2406,6 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 57.15) (xy 118.11 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "080d60f5-c661-4741-8a2a-958997a4f77e")
-	)
-	(wire
-		(pts
 			(xy 233.68 91.44) (xy 233.68 85.09)
 		)
 		(stroke
@@ -2456,7 +2446,7 @@
 	)
 	(wire
 		(pts
-			(xy 266.7 58.42) (xy 266.7 60.96)
+			(xy 266.7 52.07) (xy 266.7 58.42)
 		)
 		(stroke
 			(width 0)
@@ -2586,16 +2576,6 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 134.62) (xy 135.89 134.62)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "24228167-c5fd-41d3-bd8b-26fdd880645a")
-	)
-	(wire
-		(pts
 			(xy 146.05 58.42) (xy 146.05 71.12)
 		)
 		(stroke
@@ -2673,16 +2653,6 @@
 			(type solid)
 		)
 		(uuid "2b30cbda-64b9-48d6-8b11-9e7d857eb52f")
-	)
-	(wire
-		(pts
-			(xy 266.7 52.07) (xy 266.7 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2b505f9c-0a53-4ea8-a5ac-3fb624725e78")
 	)
 	(wire
 		(pts
@@ -2796,7 +2766,7 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 134.62) (xy 130.81 134.62)
+			(xy 130.81 134.62) (xy 135.89 134.62)
 		)
 		(stroke
 			(width 0.1524)
@@ -2883,16 +2853,6 @@
 			(type default)
 		)
 		(uuid "4df125b8-c641-4935-8d32-c96954132cb5")
-	)
-	(wire
-		(pts
-			(xy 101.6 71.12) (xy 123.19 71.12)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "4fee408c-c1a9-4fab-b9da-0179150fa675")
 	)
 	(wire
 		(pts
@@ -3003,6 +2963,16 @@
 			(type solid)
 		)
 		(uuid "619d0fb0-8c30-4ada-a641-4af1532064a2")
+	)
+	(wire
+		(pts
+			(xy 123.19 71.12) (xy 146.05 71.12)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "6276b2cf-97cb-40f9-b737-c3c64ccb6deb")
 	)
 	(wire
 		(pts
@@ -3196,6 +3166,16 @@
 	)
 	(wire
 		(pts
+			(xy 135.89 134.62) (xy 139.7 134.62)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "862bc5f0-4ca7-4752-a79f-bc823723d6a6")
+	)
+	(wire
+		(pts
 			(xy 265.43 153.67) (xy 269.24 153.67)
 		)
 		(stroke
@@ -3386,7 +3366,7 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 71.12) (xy 146.05 71.12)
+			(xy 101.6 71.12) (xy 123.19 71.12)
 		)
 		(stroke
 			(width 0.1524)
@@ -3596,6 +3576,16 @@
 	)
 	(wire
 		(pts
+			(xy 110.49 57.15) (xy 118.11 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d33e440a-8ccf-4171-9b7b-aed7c7007152")
+	)
+	(wire
+		(pts
 			(xy 69.85 31.75) (xy 69.85 26.67)
 		)
 		(stroke
@@ -3793,6 +3783,16 @@
 			(type solid)
 		)
 		(uuid "ec672c02-51d7-4a78-9995-027adf75e750")
+	)
+	(wire
+		(pts
+			(xy 266.7 58.42) (xy 266.7 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ecf57523-0f0a-41f7-af40-1861a6f357a9")
 	)
 	(wire
 		(pts
@@ -4926,7 +4926,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x02_P3.50mm_Horizontal"
+		(property "Footprint" "LDO_C2:TerminalBlock_4Ucon_1x02_P3.50mm_Horizontal(3D)"
 			(at 271.78 49.53 0)
 			(effects
 				(font
@@ -4977,7 +4977,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "232822ff-86b3-43a5-9804-c829e38f8d80")
-		(property "Reference" "TP3"
+		(property "Reference" "Vop1"
 			(at 134.112 125.984 0)
 			(effects
 				(font
@@ -4995,7 +4995,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm"
+		(property "Footprint" "LDO_C2:TestPoint_THTPad_1.3x1.3mm_Drill0.7mm"
 			(at 140.97 134.62 0)
 			(effects
 				(font
@@ -5028,7 +5028,7 @@
 		(instances
 			(project "dce-pcb-v1"
 				(path "/e6ededfa-1272-42e1-ab55-13acb1f29d6e"
-					(reference "TP3")
+					(reference "Vop1")
 					(unit 1)
 				)
 			)
@@ -5043,7 +5043,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "23418c4c-8426-4da3-aa54-78cc2c0c59b4")
-		(property "Reference" "TP2"
+		(property "Reference" "Vd1"
 			(at 108.458 48.006 0)
 			(effects
 				(font
@@ -5061,7 +5061,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm"
+		(property "Footprint" "LDO_C2:TestPoint_THTPad_1.3x1.3mm_Drill0.7mm"
 			(at 115.57 57.15 0)
 			(effects
 				(font
@@ -5094,7 +5094,7 @@
 		(instances
 			(project "dce-pcb-v1"
 				(path "/e6ededfa-1272-42e1-ab55-13acb1f29d6e"
-					(reference "TP2")
+					(reference "Vd1")
 					(unit 1)
 				)
 			)
@@ -6087,7 +6087,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "63fb186d-ceb5-40c3-8423-427bc2ccf9db")
-		(property "Reference" "TP4"
+		(property "Reference" "GND2"
 			(at 261.112 55.118 90)
 			(effects
 				(font
@@ -6103,7 +6103,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm"
+		(property "Footprint" "LDO_C2:TestPoint_THTPad_1.3x1.3mm_Drill0.7mm"
 			(at 266.7 53.34 0)
 			(effects
 				(font
@@ -6136,7 +6136,7 @@
 		(instances
 			(project ""
 				(path "/e6ededfa-1272-42e1-ab55-13acb1f29d6e"
-					(reference "TP4")
+					(reference "GND2")
 					(unit 1)
 				)
 			)
@@ -6341,7 +6341,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6da48e62-aa38-44e1-84e0-362c3bfd1885")
-		(property "Reference" "TP5"
+		(property "Reference" "GND1"
 			(at 84.328 106.172 90)
 			(effects
 				(font
@@ -6357,7 +6357,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm"
+		(property "Footprint" "LDO_C2:TestPoint_THTPad_1.3x1.3mm_Drill0.7mm"
 			(at 78.74 107.95 0)
 			(effects
 				(font
@@ -6390,7 +6390,7 @@
 		(instances
 			(project "dce-pcb-v1"
 				(path "/e6ededfa-1272-42e1-ab55-13acb1f29d6e"
-					(reference "TP5")
+					(reference "GND1")
 					(unit 1)
 				)
 			)
@@ -6775,7 +6775,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-14_W7.62mm_Socket"
+		(property "Footprint" "LDO_C2:DIP-14_W7.62mm_Socket"
 			(at 238.76 97.79 0)
 			(effects
 				(font
@@ -7393,7 +7393,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x06_P3.50mm_Horizontal"
+		(property "Footprint" "LDO_C2:TerminalBlock_4Ucon_1x06_P3.50mm_Horizontal"
 			(at 254 194.31 0)
 			(effects
 				(font
@@ -7834,7 +7834,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-14_W7.62mm_Socket"
+		(property "Footprint" "LDO_C2:DIP-14_W7.62mm_Socket"
 			(at 68.58 116.84 0)
 			(effects
 				(font
@@ -8362,7 +8362,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-14_W7.62mm_Socket"
+		(property "Footprint" "LDO_C2:DIP-14_W7.62mm_Socket"
 			(at 68.58 144.78 0)
 			(effects
 				(font
@@ -8783,7 +8783,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dd0dcf30-2d1a-45e0-8393-ccade4a9141e")
-		(property "Reference" "TP1"
+		(property "Reference" "Vf1"
 			(at 125.73 66.5479 0)
 			(effects
 				(font
@@ -8801,7 +8801,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm"
+		(property "Footprint" "LDO_C2:TestPoint_THTPad_1.3x1.3mm_Drill0.7mm"
 			(at 128.27 71.12 0)
 			(effects
 				(font
@@ -8834,7 +8834,7 @@
 		(instances
 			(project ""
 				(path "/e6ededfa-1272-42e1-ab55-13acb1f29d6e"
-					(reference "TP1")
+					(reference "Vf1")
 					(unit 1)
 				)
 			)
@@ -8866,7 +8866,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-14_W7.62mm_Socket"
+		(property "Footprint" "LDO_C2:DIP-14_W7.62mm_Socket"
 			(at 148.59 132.08 0)
 			(effects
 				(font
@@ -9488,7 +9488,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-14_W7.62mm_Socket"
+		(property "Footprint" "LDO_C2:DIP-14_W7.62mm_Socket"
 			(at 186.69 134.62 0)
 			(effects
 				(font
