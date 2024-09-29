@@ -4829,7 +4829,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "470"
+		(property "Value" "220"
 			(at 96.2152 60.6298 0)
 			(effects
 				(font
