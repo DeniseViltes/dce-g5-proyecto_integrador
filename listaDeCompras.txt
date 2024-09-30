@@ -1,0 +1,28 @@
+CAPACITORES
+1 - 2,2nF
+1 - 100pF
+5 - 10uF
+1 - bornera azul 2 pines /hay
+1 - bornera 6 pines
+1 - mosfet 2N7000
+6 - TBJ npn BC547B
+2 - TBJ pnp BC557B
+1 - TBJ pnp TIP42C
+1 - Resistencia 3.3k
+1 - Resistencia 5.6k
+2 - Resistencia 6.8k
+1 - Resistencia 1.2k
+2 - Resistencia 2.7k
+4 - Resistencia 1.5k
+1 - Resistencia 510
+1 - Resistencia 390
+4 - Resistencia 1k 
+1 - Resistencia 680
+1 - Resistencia 270
+1 - Resistencia 100
+1 - Resistencia 100k /hay
+1 - Resistencia 10k /hay
+1 - Resistencia 220
+1 - Resistencia 470
+1 - Resistencia 0.1
+1 - LM324
