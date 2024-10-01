@@ -1124,6 +1124,127 @@
 				)
 			)
 		)
+		(symbol "Device:R"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "ltspice:GND"
 			(power)
 			(exclude_from_sim no)
@@ -2263,12 +2384,6 @@
 		(uuid "a030c2a6-64f2-4cc2-af89-21a3ac7e2dfc")
 	)
 	(junction
-		(at 78.74 77.47)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "aeb8e2dd-ab02-41d9-a0eb-0a7e163c5de1")
-	)
-	(junction
 		(at 279.4 161.29)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2347,6 +2462,12 @@
 		(uuid "e17c88d4-fc45-41cf-bcb8-26746ccb9d91")
 	)
 	(junction
+		(at 78.74 81.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e4b89055-8360-4987-a465-1ee35351bfa5")
+	)
+	(junction
 		(at 82.55 119.38)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2373,16 +2494,6 @@
 			(type solid)
 		)
 		(uuid "0137c451-c2a2-4f79-bc04-10226cfc56cd")
-	)
-	(wire
-		(pts
-			(xy 78.74 88.9) (xy 78.74 77.47)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "0326022c-6bcb-43ea-b838-97f1587a5f5b")
 	)
 	(wire
 		(pts
@@ -2713,16 +2824,6 @@
 			(type solid)
 		)
 		(uuid "322b59fc-5690-4ed7-abd5-e954904e4e6a")
-	)
-	(wire
-		(pts
-			(xy 78.74 77.47) (xy 69.85 77.47)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "343a5db3-08a6-47c2-b411-2f4bb16736d9")
 	)
 	(wire
 		(pts
@@ -3346,16 +3447,6 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 77.47) (xy 78.74 77.47)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "9a71d69f-4462-4328-b409-0d02e41f0e14")
-	)
-	(wire
-		(pts
 			(xy 81.28 146.05) (xy 81.28 147.32)
 		)
 		(stroke
@@ -3403,6 +3494,16 @@
 			(type solid)
 		)
 		(uuid "9fb578b9-fbef-4b52-af0e-ea28fc951755")
+	)
+	(wire
+		(pts
+			(xy 77.47 81.28) (xy 78.74 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9ff25664-8cc7-4c42-961c-2f2e066f352e")
 	)
 	(wire
 		(pts
@@ -3516,6 +3617,16 @@
 	)
 	(wire
 		(pts
+			(xy 78.74 81.28) (xy 80.01 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b4cb3777-ab76-417a-8fc7-91f6ff696704")
+	)
+	(wire
+		(pts
 			(xy 238.76 87.63) (xy 240.03 87.63)
 		)
 		(stroke
@@ -3596,6 +3707,16 @@
 	)
 	(wire
 		(pts
+			(xy 87.63 77.47) (xy 87.63 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c3cab861-3b12-4088-b2d6-7d56525f9a28")
+	)
+	(wire
+		(pts
 			(xy 41.91 85.09) (xy 30.48 85.09)
 		)
 		(stroke
@@ -3603,6 +3724,16 @@
 			(type solid)
 		)
 		(uuid "c6911fdf-622b-4c1b-90de-b27f2814c172")
+	)
+	(wire
+		(pts
+			(xy 78.74 81.28) (xy 78.74 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c6e1e295-9150-44db-84bd-da4ea7d78632")
 	)
 	(wire
 		(pts
@@ -3616,7 +3747,7 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 77.47) (xy 69.85 74.93)
+			(xy 69.85 74.93) (xy 69.85 81.28)
 		)
 		(stroke
 			(width 0.1524)
@@ -7574,6 +7705,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 73.66 81.28 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "937d1bf4-7171-45a3-8d9d-c6e50c91036a")
+		(property "Reference" "R24"
+			(at 73.66 74.93 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10"
+			(at 73.66 77.47 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
+			(at 73.66 83.058 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 73.66 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 73.66 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a7371608-16d7-4e58-8314-9dbca1a00d8a")
+		)
+		(pin "1"
+			(uuid "5478b3bb-5561-46ca-b461-e6df1728e5a8")
+		)
+		(instances
+			(project ""
+				(path "/e6ededfa-1272-42e1-ab55-13acb1f29d6e"
+					(reference "R24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "ltspice:GND")
 		(at 116.84 151.13 0)
 		(unit 1)
@@ -8451,6 +8650,74 @@
 			(project ""
 				(path "/e6ededfa-1272-42e1-ab55-13acb1f29d6e"
 					(reference "R15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 83.82 81.28 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bcc759de-1d71-42b0-88be-c658012d454d")
+		(property "Reference" "R25"
+			(at 83.82 74.93 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10"
+			(at 83.82 77.47 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
+			(at 83.82 83.058 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 83.82 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 83.82 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a425c36d-a6b9-4128-a6ab-e54da14cff9c")
+		)
+		(pin "1"
+			(uuid "a165889a-d8de-4a5f-a724-8dc461dbb623")
+		)
+		(instances
+			(project "dce-pcb-v1"
+				(path "/e6ededfa-1272-42e1-ab55-13acb1f29d6e"
+					(reference "R25")
 					(unit 1)
 				)
 			)

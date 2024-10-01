@@ -5,7 +5,7 @@
       "Application": "Pcbnew",
       "Version": "8.0.5"
     },
-    "CreationDate": "2024-09-29T00:41:08-03:00"
+    "CreationDate": "2024-10-01T13:09:18-03:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
@@ -14,8 +14,8 @@
       "Revision": "rev?"
     },
     "Size": {
-      "X": 74.85,
-      "Y": 50.75
+      "X": 83.4,
+      "Y": 51.575
     },
     "LayerNumber": 2,
     "BoardThickness": 1.6,
@@ -36,6 +36,11 @@
     {
       "Path": "dce-pcb-v1-B_Cu.gbr",
       "FileFunction": "Copper,L2,Bot",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "dce-pcb-v1-F_Silkscreen.gbr",
+      "FileFunction": "Legend,Top",
       "FilePolarity": "Positive"
     },
     {

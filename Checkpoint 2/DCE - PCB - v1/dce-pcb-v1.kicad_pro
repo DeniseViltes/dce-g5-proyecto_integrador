@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.7,
-          "height": 1.3,
-          "width": 1.3
+          "drill": 0.8,
+          "height": 1.6,
+          "width": 1.6
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -478,7 +478,7 @@
     "last_paths": {
       "gencad": "",
       "idf": "",
-      "netlist": "../../../../../../../../../../../Program Files/KiCad/8.0/",
+      "netlist": "../../../../../../../../../../Program Files/KiCad/8.0/",
       "plot": "LCI/",
       "pos_files": "",
       "specctra_dsn": "",
