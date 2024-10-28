@@ -25,3 +25,16 @@ plt.plot(RL, p5, color='#e377c2', label = 'Vo = 5V',linewidth=3)
 plt.legend()
 plt.savefig('graficos/potencia.png')
 plt.show()
+
+
+pmaxRl3 = max(p3)
+
+Rmax3= RL[np.where(p3 == pmaxRl3 )[0]]
+print('Rmax3=' ,Rmax3)
+print('Pmax=' , pmaxRl3)
+
+pmaxRl5 = max(p5)
+
+Rmax5= RL[np.where(p5 == pmaxRl5 )[0]]
+print('Rmax5=' ,Rmax5)
+print('Pmax=' , pmaxRl5)
