@@ -1,0 +1,21 @@
+Circuit: * C:\Users\---\Desktop\DCE\dce-g5-proyecto_integrador\Checkpoint 4\Simus\Regulador_buck.asc
+
+Direct Newton iteration for .op point succeeded.
+
+Date: Wed Oct 30 23:45:27 2024
+Total elapsed time: 1.102 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 749344
+traniter = 749338
+tranpoints = 219279
+accept = 176009
+rejected = 43270
+matrix size = 11
+fillins = 0
+solver = Normal
+Matrix Compiler1: 494 bytes object code size  0.1/0.1/[0.1]
+Matrix Compiler2: 813 bytes object code size  0.1/0.1/[0.1]
+
