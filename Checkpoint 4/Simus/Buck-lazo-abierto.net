@@ -1,0 +1,16 @@
+* C:\Users\---\Desktop\DCE\dce-g5-proyecto_integrador\Checkpoint 4\Simus\Buck-lazo-abierto.asc
+V1 N001 0 12
+V2 Vg 0 PULSE(15 0 0 1n 1n 4.2u 12.5u)
+D1 0 Vd 1N5819
+L§IL Vd Vo 37µ
+C1 Vo 0 100µ
+M1 Vd Vg N001 N001 IRF9640
+R1 Vo 0 5
+.model D D
+.lib C:\Users\---\Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\Users\---\Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 0 2m 0
+.backanno
+.end

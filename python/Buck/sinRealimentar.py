@@ -8,15 +8,15 @@ def guardar_variables_en_txt(nombre_archivo, variables):
 
 
 
-Vout = 6.35
+Vs = 6.35
 Vin = 12
-Iout = 0.2  #se supune que tengo que poner la minima aca, hay que ver como calculamos esto
 f = 200*10**3
 Vr = 0.18
-deltaI_L = 0.1
+Is_min = 0.2  #se supune que tengo que poner la minima aca, hay que ver como calculamos esto
+Il_max = 2*Is_min
 
 
-D = Vout/Vin
+D = Vs/Vin
 
 ton = D/f
 
@@ -24,26 +24,28 @@ toff = 1/f -ton
 
 
 
-Rmax = 5
+Rmax = Vs/Is_min
 
 Lcr = (1-D)*Rmax/(2*f)
+# Lcr = 1.25*Lcr
 
-
+Rcr = 2*f*Lcr/(1-D)
 # o.. elijo un Lcr y calculo Rcr?
 
 
 
 
-C = deltaI_L/(8*f*Vr)
+# C = deltaI_L/(8*f*Vr)
+C=(1-D)*Vs/(8*(f**2)*Vr*Lcr)
 
 
 componentes = {
-    "Iout": Iout,
     "Duty": D,
     "T": 1/f,
     "ton": ton,
-    "Rmax": Rmax,
+    "Is (minimo)": Is_min,
     "L (critico)": Lcr,
+    "R (critico)": Rcr,
     "C" :C
 }
 

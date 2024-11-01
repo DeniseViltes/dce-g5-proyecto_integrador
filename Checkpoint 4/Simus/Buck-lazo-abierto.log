@@ -2,20 +2,20 @@ Circuit: * C:\Users\---\Desktop\DCE\dce-g5-proyecto_integrador\Checkpoint 4\Simu
 
 Direct Newton iteration for .op point succeeded.
 
-Date: Wed Oct 30 23:47:26 2024
-Total elapsed time: 1.117 seconds.
+Date: Fri Nov 01 13:17:43 2024
+Total elapsed time: 0.367 seconds.
 
 tnom = 27
 temp = 27
 method = modified trap
-totiter = 765452
-traniter = 765446
-tranpoints = 214037
-accept = 167196
-rejected = 46841
+totiter = 167507
+traniter = 167501
+tranpoints = 46593
+accept = 36345
+rejected = 10248
 matrix size = 11
 fillins = 0
 solver = Normal
-Matrix Compiler1:      29 opcodes  0.1/[0.0]/0.1
-Matrix Compiler2: off  [0.1]/0.1/0.1
+Matrix Compiler1: 494 bytes object code size  0.1/0.1/[0.0]
+Matrix Compiler2: 813 bytes object code size  0.1/0.1/[0.1]
 
