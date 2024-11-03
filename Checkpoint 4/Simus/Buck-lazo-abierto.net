@@ -1,0 +1,19 @@
+* C:\Users\---\Desktop\DCE\dce-g5-proyecto_integrador\Checkpoint 4\Simus\Buck-lazo-abierto.asc
+V1 N001 0 12
+V2 Vg 0 PULSE(15 0 0 1n 1n 4.2u 12.5u)
+D1 0 Vd Dmbr360rl
+L§IL Vd Vo 88µ
+C1 Vo 0 2.2µ
+M1 Vd Vg N001 N001 IRF9640
+R1 Vo 0 5
+.model D D
+.lib C:\Users\---\Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\Users\---\Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 0 2m 0
+.MEASURE TRAN Vo AVG(V(Vo)) FROM=0.2ms TO=2ms
+.MEASURE TRAN IL AVG(I(IL)) FROM=0.2ms TO=2ms
+.include mc34063.lib
+.backanno
+.end

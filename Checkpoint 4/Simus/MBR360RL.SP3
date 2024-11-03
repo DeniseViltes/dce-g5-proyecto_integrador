@@ -9,10 +9,10 @@
 *    Modeling services provided by   *
 * Interface Technologies www.i-t.com *
 **************************************
-.MODEL Dmbr360rl d
+.MODEL mbr360rl d
 +IS=1e-07 RS=0.0621601 N=0.889172 EG=0.570452
 +XTI=4 BV=60 IBV=0.0006 CJO=5.19446e-10
 +VJ=0.4 M=0.499812 FC=0.5 TT=0
 +KF=0 AF=1
 * Model generated on October 12, 2003
-* Model format: PSpice
+* Model format: SPICE3
