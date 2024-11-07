@@ -18,7 +18,7 @@ def escribirComponentes(archivo):
 
     for i in range(0, N):
         cumple = False
-        if C * Rcr[i] >= (1 / f) * 10:
+        if C * Rcr[i] >= (1 / f) * 100:
             cumple = True
 
         resultados = {
@@ -50,10 +50,10 @@ N = 1
 Vs = 6.35
 Vin = np.linspace(12,36,N)
 f = 200*10**3
-Vr = 0.15
-Is_min = 0.1  #se supune que tengo que poner la minima aca, hay que ver como calculamos esto
+Vr = 0.1
+Is_min = 0.02  #se supune que tengo que poner la minima aca, hay que ver como calculamos esto
 Il_max = 2*Is_min
-deltaI_L =Is_min/2
+deltaI_L =Il_max/2
 
 
 D = Vs/Vin
@@ -65,6 +65,8 @@ toff = 1/f - ton
 
 
 Rmax = Vs/Is_min
+
+
 
 Lcr= L_critico(Rmax, D)
 Rcr = R_critico(Lcr, D)
@@ -79,15 +81,16 @@ escribirComponentes(critico)
 operativo =r"C:\Users\---\Desktop\DCE\dce-g5-proyecto_integrador\Checkpoint 4\intento1.txt"
 
 
-Is = 0.85
-Rmax = Vs/Is
-Lcr= L_critico(Rmax, D)
-Lcr *=10
+# Is = 0.85
+# Rmax = Vs/Is
+# Lcr= L_critico(Rmax, D)
+Lcr[0] = 500*10**(-6)
 Rcr = R_critico(Lcr, D)
+#
+#
+# C *=10
 
-
-C *=10
-
+#
 escribirComponentes(operativo)
 
 
