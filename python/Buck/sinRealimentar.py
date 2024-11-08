@@ -91,7 +91,7 @@ Rcr = R_critico(Lcr, D)
 #
 # C *=10
 
-# C =1.5*10**(-6)
+C =150*10**(-9)
 
 delta_Vo = deltaI_L/(8*f*C)
 print(delta_Vo)
