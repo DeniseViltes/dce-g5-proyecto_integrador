@@ -1,4 +1,4 @@
-23848267904669758
+23853455563802362
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -63518,8 +63518,29 @@ THT Terminal Block 4Ucon ItemNo. 19964 pitch 3.5mm size 21.7x7mm^2 drill 1.2mm p
 6
 6
 LDO_C2
+TerminalBlock_bornier-2_P5.08mm
+simple 2-pin terminal block, pitch 5.08mm, revamped version of bornier2
+terminal block bornier2
+0
+2
+2
+LDO_C2
+TerminalBlock_bornier-6_P5.08mm
+simple 6pin terminal block, pitch 5.08mm, revamped version of bornier6
+terminal block bornier6
+0
+6
+6
+LDO_C2
 TestPoint_THTPad_1.3x1.3mm_Drill0.7mm
 THT rectangular pad as test Point, square 1.0mm side length, hole diameter 0.5mm
+test point THT pad rectangle square
+0
+1
+1
+LDO_C2
+TestPoint_THTPad_2.0x2.0mm_Drill1.0mm
+THT rectangular pad as test Point, square 2.0mm_Drill1.0mm  side length, hole diameter 1.0mm
 test point THT pad rectangle square
 0
 1

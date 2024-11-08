@@ -1,0 +1,180 @@
+(footprint "TestPoint_THTPad_2.0x2.0mm_Drill1.0mm"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "THT rectangular pad as test Point, square 2.0mm_Drill1.0mm  side length, hole diameter 1.0mm")
+	(tags "test point THT pad rectangle square")
+	(property "Reference" "GND1"
+		(at 0.1 2.5 0)
+		(layer "F.SilkS")
+		(uuid "9f5d8bba-d05a-4447-8f93-83db0499032e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "TestPoint"
+		(at 0 2.05 0)
+		(layer "F.Fab")
+		(uuid "794b407f-0916-43d4-afad-9c8430c99a22")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c5b93c06-4708-4de6-a01d-1230cff33e0c")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f17993ba-5f0c-4163-86a0-8f34cb4413f2")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "test point"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "982e3f8c-1ebf-410f-93b3-9407411b52bc")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr exclude_from_pos_files exclude_from_bom)
+	(fp_line
+		(start -1.2 -1.2)
+		(end 1.2 -1.2)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "f93f4691-d838-4983-b046-ce6a1bdd5e33")
+	)
+	(fp_line
+		(start -1.2 1.2)
+		(end -1.2 -1.2)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "6cf85367-3c6c-40c9-8862-dad9d13913d2")
+	)
+	(fp_line
+		(start 1.2 -1.2)
+		(end 1.2 1.2)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "574b63b9-8ab4-4153-8559-7f6d1b5b5f9a")
+	)
+	(fp_line
+		(start 1.2 1.2)
+		(end -1.2 1.2)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "c4731679-4161-42ba-8f79-1ca01a1e38fb")
+	)
+	(fp_line
+		(start -1.5 -1.5)
+		(end -1.5 1.5)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "c820caba-2605-403a-8fb7-2df8fd31a252")
+	)
+	(fp_line
+		(start -1.5 -1.5)
+		(end 1.5 -1.5)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "b297938f-e8ca-42cd-ae3c-58d1849e6d3a")
+	)
+	(fp_line
+		(start 1.5 1.5)
+		(end -1.5 1.5)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "1ad3a284-40d4-4cec-9649-2192c3f94418")
+	)
+	(fp_line
+		(start 1.5 1.5)
+		(end 1.5 -1.5)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "ef22c394-138a-4bef-b50d-09ca37e4c744")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 -2 0)
+		(layer "F.Fab")
+		(uuid "4684396a-0113-49bc-803d-aa876316aa2b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole rect
+		(at 0 0)
+		(size 2 2)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "04ccc0f7-e7d5-4d0b-9cb5-3e3e7706f113")
+	)
+	(model "${KIPRJMOD}/Modelos3D/male_pin.wrl"
+		(offset
+			(xyz -19.35 0 0)
+		)
+		(scale
+			(xyz 0.3 0.3 0.3)
+		)
+		(rotate
+			(xyz -90 0 0)
+		)
+	)
+)
