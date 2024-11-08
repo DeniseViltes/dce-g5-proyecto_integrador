@@ -46,7 +46,7 @@ def R_critico(L, D):
 
 critico = r"C:\Users\---\Desktop\DCE\dce-g5-proyecto_integrador\Checkpoint 4\ResultadoCuentitas.txt"
 
-N = 1
+N = 2
 Vs = 6.35
 Vin = np.linspace(12,36,N)
 f = 200*10**3
@@ -84,13 +84,24 @@ operativo =r"C:\Users\---\Desktop\DCE\dce-g5-proyecto_integrador\Checkpoint 4\in
 # Is = 0.85
 # Rmax = Vs/Is
 # Lcr= L_critico(Rmax, D)
-Lcr[0] = 500*10**(-6)
+Lcr[0] = 700*10**(-6)
+Lcr[1] = 700*10**(-6)
 Rcr = R_critico(Lcr, D)
 #
 #
 # C *=10
 
+# C =1.5*10**(-6)
+
+delta_Vo = deltaI_L/(8*f*C)
+print(delta_Vo)
 #
 escribirComponentes(operativo)
 
+tiempo_muerto = 470*10**-9
+ton_nuevo= D/f + tiempo_muerto
 
+D_nuevo = ton_nuevo*f
+
+print(ton_nuevo)
+print(D_nuevo)
