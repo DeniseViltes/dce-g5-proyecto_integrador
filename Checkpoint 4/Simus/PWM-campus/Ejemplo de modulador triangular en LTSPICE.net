@@ -1,0 +1,27 @@
+* C:\Users\corne\OneDrive\Documentos\Diogenes\Facultad\C2\dce-g5-proyecto_integrador\Checkpoint 4\Simus\PWM-campus\Ejemplo de modulador triangular en LTSPICE.asc
+R5 N001 Va 33k
+R1 VCC N004 89k
+R2 N004 0 100k
+V1 VCC 0 12
+R3 Va N003 100k
+R4 Vb N003 27k
+V2 Vr 0 SINE(6.35 0.1 200k)
+C1 Vb N001 100p
+XU4 Vr Vb VCC 0 Vo LTC6702
+XU8 N003 N002 VCC 0 Va LTC6702
+XU7 N002 N001 VCC 0 Vb TL081
+XU6 N004 N002 VCC 0 N002 TL081
+.tran 0 100u 14u uic
+.model IRF9540 PMOS(Level=3 Gamma=0 Delta=0 Eta=0 Theta=0 Kappa=0.2 Vmax=0 Xj=0
++ Tox=100n Uo=300 Phi=.6 Rs=64.15m Kp=10.18u W=1.5 L=2u
++ Vto=-3.646 Rd=62.45m Rds=444.4K Cbd=2.029n Pb=.8 Mj=.5 Fc=.5
++ Cgso=1.033n Cgdo=469.4p Rg=.3371 Is=54.08E-18 N=2 Tt=140n)
+.model 1N4002 D (Is=14.11n N=1.984 Rs=33.89E-3 Ikf=94.81 Xti=3 Eg=1.110 Cjo=51.17E-12)
+.inc LM324.lib
+* R4 Aumentarla\nAumenta la ampl de la triang\nDismin la frec
+* R3 Aumentarla\nDisminuye la ampl de la triang\nAumenta la frec
+* C1 Aumentarla\n Aumenta la ampl de la triang\nDisminuye la frec
+.lib LTC3.lib
+.lib TL081.lib
+.backanno
+.end
