@@ -1,6 +1,6 @@
 {
   "board": {
-    "active_layer": 44,
+    "active_layer": 31,
     "active_layer_preset": "",
     "auto_track_width": true,
     "hidden_netclasses": [],
@@ -19,7 +19,7 @@
       "footprints": true,
       "graphics": true,
       "keepouts": true,
-      "lockedItems": true,
+      "lockedItems": false,
       "otherItems": true,
       "pads": true,
       "text": true,
@@ -63,7 +63,7 @@
       39,
       40
     ],
-    "visible_layers": "8001fff_ffffffff",
+    "visible_layers": "8001024_ffffffff",
     "zone_display_mode": 0
   },
   "git": {
@@ -73,7 +73,7 @@
     "ssh_key": ""
   },
   "meta": {
-    "filename": "dce-pcb-v1.kicad_prl",
+    "filename": "pcb_buck.kicad_prl",
     "version": 3
   },
   "project": {
