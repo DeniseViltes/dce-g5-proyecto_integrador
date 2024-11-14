@@ -1,29 +1,22 @@
 Circuit: * C:\Users\coqui\Documents\Facultad\Circuitos II\TP\dce-g5-proyecto_integrador\Checkpoint 4\Simus\PWM-campus\PWM.asc
 
 Per .tran options, skipping operating point for transient analysis.
-Changing Tseed to 2.92969e-012
-Changing Tseed to 2.92969e-014
-Changing Tseed to 2.92969e-011
-Changing Tseed to 2.92969e-015
-Changing Tseed to 2.92969e-010
-Changing Tseed to 2.92969e-016
-Changing Tseed to 2.92969e-009
 
-Date: Tue Nov 12 17:25:24 2024
-Total elapsed time: 0.182 seconds.
+Date: Thu Nov 14 10:59:56 2024
+Total elapsed time: 0.204 seconds.
 
 tnom = 27
 temp = 27
 method = modified trap
-totiter = 14860
-traniter = 14860
-tranpoints = 4253
-accept = 3280
-rejected = 966
+totiter = 14790
+traniter = 14790
+tranpoints = 4330
+accept = 3329
+rejected = 1001
 matrix size = 77
 fillins = 81
 solver = Normal
-Thread vector: 7.4/4.3[2] 1.8/1.4[2] 0.9/0.8[2] 0.3/0.4[1]  2592/500
-Matrix Compiler1: 7.87 KB object code size  1.4/0.5/[0.5]
-Matrix Compiler2: off  [0.5]/0.6/0.5
+Thread vector: 5.9/3.7[2] 1.7/1.4[2] 0.9/0.8[2] 0.2/0.4[1]  2592/500
+Matrix Compiler1: 7.99 KB object code size  1.4/0.4/[0.4]
+Matrix Compiler2: 8.47 KB object code size  0.4/0.6/[0.4]
 
