@@ -1,22 +1,22 @@
-Circuit: * C:\Users\---\Desktop\DCE\dce-g5-proyecto_integrador\Checkpoint 4\Simus\PWM-campus\Ejemplo de modulador triangular en LTSPICE.asc
+Circuit: * C:\Users\coqui\Documents\Facultad\Circuitos II\TP\dce-g5-proyecto_integrador\Checkpoint 4\Simus\PWM-campus\Ejemplo de modulador triangular en LTSPICE.asc
 
 Per .tran options, skipping operating point for transient analysis.
 
-Date: Fri Nov 08 20:42:19 2024
-Total elapsed time: 0.930 seconds.
+Date: Fri Nov 15 00:17:44 2024
+Total elapsed time: 0.208 seconds.
 
 tnom = 27
 temp = 27
 method = modified trap
-totiter = 50157
-traniter = 50157
-tranpoints = 13344
-accept = 9632
-rejected = 3712
-matrix size = 67
-fillins = 130
+totiter = 11135
+traniter = 11135
+tranpoints = 3895
+accept = 3190
+rejected = 705
+matrix size = 254
+fillins = 120
 solver = Normal
-Thread vector: 8.1/5.7[2] 3.9/2.4[2] 2.4/1.9[2] 0.3/1.5[1]  2592/500
-Matrix Compiler1: 10.88 KB object code size  1.7/2.2/[0.6]
-Matrix Compiler2: 8.17 KB object code size  0.6/2.1/[0.4]
+Thread vector: 10.7/3.9[5] 2.1/1.6[5] 3.0/1.5[5] 0.4/0.6[1]  2592/500
+Matrix Compiler1: 13.32 KB object code size  2.9/0.9/[0.8]
+Matrix Compiler2: 20.00 KB object code size  1.1/1.4/[0.8]
 
