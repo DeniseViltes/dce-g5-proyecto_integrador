@@ -1,5 +1,0 @@
-https://www.youtube.com/watch?v=kFL8c5-FQcs
-
-En Documents\LTspiceXVII\lib\sub poner los .lib, .sub y .mod
-
-En Documents\LTspiceXVII\lib\sym poner los .asy
