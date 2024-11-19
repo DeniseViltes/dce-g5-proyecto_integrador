@@ -1,0 +1,698 @@
+[33mcommit 8b029ac9d196639f0ebf7170c682e5092f4840c3[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: Denise <deniseviltes@gmail.com>
+Date:   Mon Nov 18 23:44:00 2024 -0300
+
+    elimina archivos temporales
+
+[33mcommit a640e9e347d8ee814ff05293ee24b45fc167c5e5[m
+Author: Denise <deniseviltes@gmail.com>
+Date:   Mon Nov 18 23:41:17 2024 -0300
+
+    pruebando algunas cositas
+
+[33mcommit d03934bc3fb7a427c09f7840aced5ef3100be5e5[m
+Author: Denise <dviltes@fi.uba.ar>
+Date:   Mon Nov 18 18:43:29 2024 -0300
+
+    sube buck a lazo cerrado
+
+[33mcommit cd5386dbe7418ae8322912869d7b3ccb22f9d7ab[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Denise <dviltes@fi.uba.ar>
+Date:   Mon Nov 18 13:04:22 2024 -0300
+
+    creo que ahora si arregla el error de las librerias
+
+[33mcommit 6daa142983c78d3d55a5b578ce55fc4c48558d59[m
+Author: Denise <82343875+DeniseViltes@users.noreply.github.com>
+Date:   Sat Nov 16 23:03:05 2024 -0300
+
+    Arregla problemas de símbolos en el support
+
+[33mcommit 4b9762af98f625487a08d2803200d157c17793db[m
+Author: Denise <82343875+DeniseViltes@users.noreply.github.com>
+Date:   Sat Nov 16 23:01:54 2024 -0300
+
+    Arregla problemas de símbolos en el pwm
+
+[33mcommit 3dfc9a683af07bb30a6d603da03c6362e4d9237d[m
+Author: Denise <82343875+DeniseViltes@users.noreply.github.com>
+Date:   Sat Nov 16 23:00:57 2024 -0300
+
+    Arregla problemas de símbolos en el buck
+
+[33mcommit f841fa312ae180a80f51ecd4233854b9c5b8d74d[m
+Author: Denise <82343875+DeniseViltes@users.noreply.github.com>
+Date:   Sat Nov 16 22:59:38 2024 -0300
+
+    Actualiza los datasheets que faltan
+
+[33mcommit 31cae2d6c5f477fd291ee4928c1f8b0583634467[m
+Author: Denise <dviltes@fi.uba.ar>
+Date:   Sat Nov 16 20:36:44 2024 -0300
+
+    cambios finales cp4
+
+[33mcommit ca310c9173ffd7552a09f3433876ece83c5787d4[m
+Author: joacomelli <jmellibovsky@fi.uba.ar>
+Date:   Fri Nov 15 02:45:42 2024 -0300
+
+    pcb pwm final?
+
+[33mcommit aff4cb754eadae0049267bce4b6d063fda9f2238[m
+Author: joacomelli <jmellibovsky@fi.uba.ar>
+Date:   Fri Nov 15 02:32:18 2024 -0300
+
+    pcb pwm
+
+[33mcommit ee137d150d3bfd49ff88ddbc300a9c813caa1415[m
+Author: Sebas García <sebgarcia@fi.uba.ar>
+Date:   Fri Nov 15 01:15:11 2024 -0300
+
+    support mejorado
+
+[33mcommit c2f40795993d443749dab977810a98df2e072fe6[m
+Author: Denise <dviltes@fi.uba.ar>
+Date:   Thu Nov 14 23:41:09 2024 -0300
+
+    sube pwm coke
+
+[33mcommit 88ecd1e827337fb5421a8a83cb4b50ee92eced4d[m
+Author: joacomelli <jmellibovsky@fi.uba.ar>
+Date:   Thu Nov 14 11:01:47 2024 -0300
+
+    pwm
+
+[33mcommit 6cd9696e944d8af9d1067d7e30c7aa7dcaa67298[m
+Author: joacomelli <jmellibovsky@fi.uba.ar>
+Date:   Thu Nov 14 10:50:06 2024 -0300
+
+    pwm
+
+[33mcommit 14ab45233a4dd4f1292a04619e9332556f7614b1[m
+Author: Sebas García <sebgarcia@fi.uba.ar>
+Date:   Sun Nov 10 20:07:29 2024 -0300
+
+    simulacion del support mas prolija
+
+[33mcommit 41a8f8d8d52e0255acd70556e9b32132b85fa8f8[m
+Author: Sebas García <sebgarcia@fi.uba.ar>
+Date:   Sun Nov 10 20:06:44 2024 -0300
+
+    update librerias support
+
+[33mcommit 1c6ad80381f1818c784aa731af8f66aed93501f8[m
+Author: Denise <dviltes@fi.uba.ar>
+Date:   Sat Nov 9 22:29:40 2024 -0300
+
+    ultima version
+
+[33mcommit 8c16f70ec19a2567dd7ea5873ec5a26dbce3ce13[m
+Author: Denise <dviltes@fi.uba.ar>
+Date:   Fri Nov 8 18:11:32 2024 -0300
+
+    sube ultimo intento buck
+
+[33mcommit 34dd5f2d3dc162a49eef2445143a9b9d3fd6a9a6[m
+Author: joacomelli <jmellibovsky@fi.uba.ar>
+Date:   Fri Nov 8 17:42:17 2024 -0300
+
+    pcb pwm
+
+[33mcommit 72a283b5da829f6a9de27136e577ba0e9df4f35f[m
+Author: Denise <dviltes@fi.uba.ar>
+Date:   Fri Nov 8 15:55:52 2024 -0300
+
+    sube de todo
+
+[33mcommit 8b43a51752114ec7a46a039f1838bb6ea4705fa9[m
+Author: joacomelli <jmellibovsky@fi.uba.ar>
+Date:   Fri Nov 8 14:28:37 2024 -0300
+
+    pcb buck
+
+[33mcommit e3aae42346a68032c604c93d580594dcea217aed[m
+Author: Diogenescz <dcornejoz@fi.uba.ar>
+Date:   Fri Nov 8 12:18:43 2024 -0300
+
+    PWM listo, pensar donde realimentar
+
+[33mcommit 2d56a8b25491df42c0e7d029cfcc67646c605b6d[m
+Author: Denise <dviltes@fi.uba.ar>
+Date:   Fri Nov 8 12:07:20 2024 -0300
+
+    Revert "PWM cocinadito"
+    
+    This reverts commit b6f61ffd52ceb4e050fefbf99fd4870990937637.
+
+[33mcommit 3340e74aadf73e8a3c1e0ef7d22c6d0a4638ed21[m
+Merge: 4e2bb54 b6f61ff
+Author: Denise <dviltes@fi.uba.ar>
+Date:   Fri Nov 8 12:06:24 2024 -0300
+
+    Merge branch 'main' of https://github.com/DeniseViltes/dce-g5-proyecto_integrador
+
+[33mcommit b6f61ffd52ceb4e050fefbf99fd4870990937637[m
+Author: Diogenescz <dcornejoz@fi.uba.ar>
+Date:   Fri Nov 8 11:27:26 2024 -0300
+
+    PWM cocinadito
+
+[33mcommit 4e2bb549dd6b1b440d722763234cfe3daca740ff[m
+Author: Denise <dviltes@fi.uba.ar>
+Date:   Fri Nov 8 11:11:15 2024 -0300
+
+    sube buck con valores comerciales de R y C
+
+[33mcommit c874bfa48830144884efaf25cd202b7171e1629d[m
+Author: Denise <82343875+DeniseViltes@users.noreply.github.com>
+Date:   Fri Nov 8 10:45:07 2024 -0300
+
+    Sube buck
+
+[33mcommit 9d7921ef6abb8ba154abbf0590e6828eb86d37c6[m
+Author: joacomelli <jmellibovsky@fi.uba.ar>
+Date:   Fri Nov 8 10:42:38 2024 -0300
+
+    a
+
+[33mcommit 2d6dce9aba1379f0b593921c9407534389106c2e[m
+Author: Sebas García <sebgarcia@fi.uba.ar>
+Date:   Fri Nov 8 00:43:33 2024 -0300
+
+    support acutalizado
+
+[33mcommit 8b5dc634c0d4c14182f4e5080bf7788eed311518[m
+Author: Denise <82343875+DeniseViltes@users.noreply.github.com>
+Date:   Thu Nov 7 20:22:39 2024 -0300
+
+    Ahi funciona el integrado, pero vo da cualquier cosa
+
+[33mcommit f68da0f1da867e28507911915720a15f3ad6c4cb[m
+Author: Diogenescz <dcornejoz@fi.uba.ar>
+Date:   Thu Nov 7 14:51:15 2024 -0300
+
+    Falta Pensar donde cambiaría con la realiment
+
+[33mcommit ea27e00c981e90aa0805f48fece034b14ed59294[m[33m ([m[1;31morigin/buck[m[33m)[m
+Author: Denise <dviltes@fi.uba.ar>
+Date:   Wed Nov 6 23:28:23 2024 -0300
+
+    v1 buck
+
+[33mcommit 47afabf77902c082c0402b48490fe1a5a99b007c[m
+Author: Diogenescz <dcornejoz@fi.uba.ar>
+Date:   Wed Nov 6 15:37:52 2024 -0300
+
+    PWM v1
+
+[33mcommit f104e98059b04975f096b65e11961d74b698ca70[m
+Author: Sebas García <sebgarcia@fi.uba.ar>
+Date:   Wed Nov 6 10:59:44 2024 -0300
+
+    bloque support con las librerias y datasheets
+
+[33mcommit 2a007dfa13518b0f2e2516889ba6119e13c5c9e5[m
+Author: Denise <dviltes@fi.uba.ar>
+Date:   Sun Nov 3 18:17:37 2024 -0300
+
+    probando Valores
+
+[33mcommit 969f03d189db4f5574e1a19ea5236dd5088560d2[m
+Author: Denise <dviltes@fi.uba.ar>
+Date:   Fri Nov 1 14:37:13 2024 -0300
+
+    cambio valor cap
+
+[33mcommit 212bc87fed28a8556d5c95feb7f6d458f6b9b48b[m
+Author: Denise <dviltes@fi.uba.ar>
+Date:   Fri Nov 1 13:41:09 2024 -0300
+
+    sigo probando valores
+
+[33mcommit 89d175466c14bdbe6104c451f20fb115a29fb28f[m
+Author: Denise <dviltes@fi.uba.ar>
+Date:   Wed Oct 30 23:49:34 2024 -0300
+
+    sube cuentitas del buck sin realimentar?
+    
+    igual no queda tan bien siguiendo las cuentas del Lcr, pero supongo que es porque me falta definir cual es la Iout
+
+[33mcommit b7514d1f8303948e833880ab74a7ebb1f683e5c3[m
+Author: Denise <dviltes@fi.uba.ar>
+Date:   Wed Oct 30 19:50:45 2024 -0300
+
+    sube los resultados de los componentes calculados
+
+[33mcommit 380df8e5f6438bc29551a7edc069f00f4ab0f81b[m
+Author: Denise <dviltes@fi.uba.ar>
+Date:   Wed Oct 30 19:11:12 2024 -0300
+
+    sube carpeta cp 4
+
+[33mcommit 6f9f78f2238b22c2a2b5f9fa7d6297a45939e76c[m
+Author: Denise <dviltes@fi.uba.ar>
+Date:   Mon Oct 28 13:14:15 2024 -0300
+
+    actualiza spice con los cambios en el pcb
+
+[33mcommit 188c5169cd17dd2c8ce8d64c2ea821edc4e9e182[m
+Author: Denise <dviltes@fi.uba.ar>
+Date:   Fri Oct 18 14:14:03 2024 -0300
+
+    sube primeros graficos de las mediciones
+
+[33mcommit 3d53820f6af341e30e0883af260d83adb40a6ec7[m
+Author: Denise <82343875+DeniseViltes@users.noreply.github.com>
+Date:   Sun Oct 13 17:36:22 2024 -0300
+
+    Update README.md
+
+[33mcommit aa052182623ba38114186ee0ef0345a5f9b3d9c0[m
+Author: Denise <82343875+DeniseViltes@users.noreply.github.com>
+Date:   Sun Oct 13 17:36:03 2024 -0300
+
+    probando cosas en el readme
+
+[33mcommit caf0542faee3cee326702dac74a0a9cc8e864022[m
+Merge: 5d97c4e 9a5db0c
+Author: Denise <dviltes@fi.uba.ar>
+Date:   Mon Oct 7 14:16:11 2024 -0300
+
+    Merge branch 'main' of https://github.com/DeniseViltes/dce-g5-proyecto_integrador
+
+[33mcommit 9a5db0c32a5f4fcdd49fe05f684c87d450b8d0a0[m
+Author: joacomelli <jmellibovsky@fi.uba.ar>
+Date:   Sat Oct 5 22:44:23 2024 -0300
+
+    nuevo pcb
+
+[33mcommit 83b5aff2ce048a95b7df9032d579af9286663bf2[m
+Merge: 1f1a17c 45536d1
+Author: Sebas García <sebgarcia@fi.uba.ar>
+Date:   Sat Oct 5 00:48:56 2024 -0300
+
+    Merge pull request #1 from DeniseViltes/planB
+    
+    ojala no rompa todo
+
+[33mcommit 45536d13db8b4e4c4a0301ec4a70ef014c5b5d10[m[33m ([m[1;31morigin/planB[m[33m)[m
+Author: Diogenescz <dcornejoz@fi.uba.ar>
+Date:   Sat Oct 5 00:03:35 2024 -0300
+
+    ojala no rompa todo
+
+[33mcommit 1f1a17c2568f2546f3b6af5356dfb88aca021b13[m
+Author: Diogenescz <dcornejoz@fi.uba.ar>
+Date:   Tue Oct 1 13:19:57 2024 -0300
+
+    pcb_para_imprimir
+
+[33mcommit 9ba65d8dcf6bdd64dd3a4bd74b99a41a1ba3a9d1[m
+Author: joacomelli <jmellibovsky@fi.uba.ar>
+Date:   Tue Oct 1 02:58:36 2024 -0300
+
+    pcb actualizado con recomendaciones de julio
+
+[33mcommit 6ea4c20fe10a4524c6418e1300e1e5255b78d690[m
+Merge: 3402109 e6c48bd
+Author: joacomelli <jmellibovsky@fi.uba.ar>
+Date:   Mon Sep 30 22:25:27 2024 -0300
+
+    Merge branch 'main' of https://github.com/DeniseViltes/dce-g5-proyecto_integrador
+
+[33mcommit 34021096e690218fe20ad058fa2e8e9a08cea8a6[m
+Author: joacomelli <jmellibovsky@fi.uba.ar>
+Date:   Mon Sep 30 22:25:22 2024 -0300
+
+    pcb
+
+[33mcommit 5d97c4e9e95aa69395a1481c728b2f05bd285bdd[m
+Author: Denise <dviltes@fi.uba.ar>
+Date:   Sun Sep 29 21:09:14 2024 -0300
+
+    sube listita de compras
+
+[33mcommit e6c48bd8e7de0384650565f2c8bf1a1b08275276[m
+Merge: 1127d0a 309c3bf
+Author: Sebas García <sebgarcia@fi.uba.ar>
+Date:   Sat Sep 28 23:59:55 2024 -0300
+
+    Merge branch 'main' of https://github.com/DeniseViltes/dce-g5-proyecto_integrador
+
+[33mcommit 1127d0a24ce6763305a964aec058391b56e3488f[m
+Author: Sebas García <sebgarcia@fi.uba.ar>
+Date:   Sat Sep 28 23:59:38 2024 -0300
+
+    valor de resistencia de compensacion corregida en el esquematico
+
+[33mcommit 309c3bf02552048dc5bab681429c371446aa0218[m
+Author: joacomelli <jmellibovsky@fi.uba.ar>
+Date:   Sat Sep 28 23:56:02 2024 -0300
+
+    actualizacion PCB
+
+[33mcommit 52fed1c92b5c98025d659b57d8e8c8ffe28621c9[m
+Author: joacomelli <jmellibovsky@fi.uba.ar>
+Date:   Sat Sep 28 22:37:55 2024 -0300
+
+    PCB actualizado
+
+[33mcommit a14b301021b5489323bcfda270596b7d04a93c4a[m
+Author: Denise <dviltes@fi.uba.ar>
+Date:   Sat Sep 28 19:46:39 2024 -0300
+
+    arregla los grafiquitos de los bodes
+
+[33mcommit 053220809f78852a2b87da90c2ef7e22e282bf30[m
+Author: Denise <dviltes@fi.uba.ar>
+Date:   Fri Sep 27 16:38:56 2024 -0300
+
+    Sube todas las simulaciones de ganancia de lazo
+
+[33mcommit 135952c58777325125c9e4ac71451d133cc5e460[m
+Author: joacomelli <jmellibovsky@fi.uba.ar>
+Date:   Fri Sep 27 14:13:20 2024 -0300
+
+    actualizacion pcb
+
+[33mcommit 0315d11c9c7e9d4f61fc84940973437e4a931bff[m
+Author: Denise <dviltes@fi.uba.ar>
+Date:   Fri Sep 27 12:31:15 2024 -0300
+
+    Sube lgraficos del lazo de tension sin compensar para varias RL
+
+[33mcommit 25f8ce7f606d293ddd7194277526e9470602b779[m
+Author: Sebas García <sebgarcia@fi.uba.ar>
+Date:   Fri Sep 27 12:04:12 2024 -0300
+
+    simulacion reordenada
+
+[33mcommit 352b8a901d8c94ba373eda995c44d00b07de9608[m
+Author: Denise <dviltes@fi.uba.ar>
+Date:   Fri Sep 27 01:14:38 2024 -0300
+
+    sube primer transitorio
+
+[33mcommit b2c41e1901f2714d1df2aed109cb2fd2052a7b03[m
+Author: Sebas García <sebgarcia@fi.uba.ar>
+Date:   Fri Sep 27 00:36:02 2024 -0300
+
+    valor de R de compensacion actualizado
+
+[33mcommit 647c8366005ba9113a5d6092aa3db790aeb15155[m
+Author: Denise <dviltes@fi.uba.ar>
+Date:   Thu Sep 26 23:54:10 2024 -0300
+
+    Sube transitorios del foldback
+
+[33mcommit 6887da6df4c68de52530247e818584c54033ae1e[m
+Author: Sebas García <sebgarcia@fi.uba.ar>
+Date:   Thu Sep 26 23:36:56 2024 -0300
+
+    nueva datasheet
+
+[33mcommit c18fabba0e0728fa8a64b73f5f6d1bdf820dcfeb[m
+Author: Denise <dviltes@fi.uba.ar>
+Date:   Thu Sep 26 23:20:40 2024 -0300
+
+    Sube curvas basicas
+    
+    foldback
+    potencia
+    recta de carga
+    recta de linea
+
+[33mcommit 904f0236758ff1a1744eb2f1deaac2a07dcfce76[m
+Author: joacomelli <jmellibovsky@fi.uba.ar>
+Date:   Thu Sep 26 22:33:00 2024 -0300
+
+    Actualizacion PCB
+
+[33mcommit 71f9c82864414c043661ed158eb08ed35f25ec8e[m
+Author: Denise <dviltes@fi.uba.ar>
+Date:   Thu Sep 26 22:30:49 2024 -0300
+
+    sube todas las simulaciones a resources
+
+[33mcommit 109954a9801f034b06e25fef7774d7541386bf56[m
+Author: Diogenescz <dcornejoz@fi.uba.ar>
+Date:   Thu Sep 26 16:55:58 2024 -0300
+
+    pcb_almost_finished
+
+[33mcommit 1555b472df942e47f13bf943749694e2a1e3a8f3[m
+Author: joacomelli <jmellibovsky@fi.uba.ar>
+Date:   Thu Sep 26 13:28:48 2024 -0300
+
+    avance pcb
+
+[33mcommit b28aecdef364f3e340b4d9fc427c2ccae6ee8ab0[m
+Author: joacomelli <jmellibovsky@fi.uba.ar>
+Date:   Wed Sep 25 19:45:20 2024 -0300
+
+    avance pcb
+
+[33mcommit 6237920b54e64cc1fa7ac9b0d59ae12147589d93[m
+Author: Denise <dviltes@fi.uba.ar>
+Date:   Wed Sep 25 13:26:30 2024 -0300
+
+    Sube esquematico y diseño del pcb actualizados
+    
+    Falta organizar el pcb
+
+[33mcommit f303ef350d5f4ccd0411f33cfe6c1f8024c2c7d6[m
+Author: joacomelli <jmellibovsky@fi.uba.ar>
+Date:   Wed Sep 25 12:51:48 2024 -0300
+
+    Nuevos valores de R para el foldback
+
+[33mcommit f146d1e0f190d81ec6f47c882d8f02c7c1f8bcd7[m
+Author: joacomelli <jmellibovsky@fi.uba.ar>
+Date:   Wed Sep 25 12:37:42 2024 -0300
+
+    Ahora si valores finales comerciales de las compensaciones de lazo
+
+[33mcommit 5c7d6ac6f4d8147b79f187b5d79598acccb8a756[m
+Author: joacomelli <jmellibovsky@fi.uba.ar>
+Date:   Wed Sep 25 12:06:47 2024 -0300
+
+    Simulacion final de lazos de tension y corriente
+
+[33mcommit b4ae7a3779aa7e6f1e9cc70633cfa5aa45862eac[m
+Author: Denise <dviltes@fi.uba.ar>
+Date:   Wed Sep 25 00:41:13 2024 -0300
+
+    sube primeros graficos en python
+    
+    arregla la corriente de foldback, pero se pasa de los 750mA
+    Deja más linda la bornera del pcb
+    Falta agregar test points en el pcb
+
+[33mcommit 2170e7114dfb9e6ed4d50aa0c3bca91bf6f67387[m
+Author: Denise <dviltes@fi.uba.ar>
+Date:   Tue Sep 24 23:53:16 2024 -0300
+
+    Empieza archivo de ploteo en python, y el nuevo esquemático del p
+
+[33mcommit 998b9960d6aa9a398b63f3df93c44b8e2bc58347[m
+Author: Diogenescz <dcornejoz@fi.uba.ar>
+Date:   Tue Sep 24 11:38:01 2024 -0300
+
+    compensado
+
+[33mcommit 22ed5879d35a712daf1e3892a0034b5b16903c16[m
+Author: Sebas García <sebgarcia@fi.uba.ar>
+Date:   Sun Sep 22 21:28:51 2024 -0300
+
+    Simulacion compensada
+
+[33mcommit 4618dfd9098fb51ddea902ef992b2602ec702f2f[m
+Author: Sebas García <sebgarcia@fi.uba.ar>
+Date:   Sun Sep 22 20:52:28 2024 -0300
+
+    Update Simulación.asc
+
+[33mcommit 37ce0d2eded498fe8b68a98d86f4f813028ea56e[m
+Author: Sebas García <sebgarcia@fi.uba.ar>
+Date:   Sun Sep 22 20:51:37 2024 -0300
+
+    Simulación con 4 opamps
+
+[33mcommit 394208d54764a9b3f6bf58a737f4845ca6002df4[m
+Author: Sebas García <sebgarcia@fi.uba.ar>
+Date:   Sat Sep 21 21:17:29 2024 -0300
+
+    Un poco mas ordenado
+
+[33mcommit bbaf4e57ece6adaadae8bce74ec89ba0465af010[m
+Author: Denise <dviltes@fi.uba.ar>
+Date:   Thu Sep 19 23:52:31 2024 -0300
+
+    sube simulación de lazo de ganancia
+
+[33mcommit 5453816efe8accbdb51055bef87cfc59b13ca33f[m
+Author: Denise <dviltes@fi.uba.ar>
+Date:   Thu Sep 19 23:13:51 2024 -0300
+
+    sube solo entrega del checkpoint 1
+    
+    acomoda archivos, y elimina versiones obsoletas
+
+[33mcommit e2897ec34d0fa7709eb2f219d24213e0cffb7d53[m[33m ([m[1;31morigin/checkpoint1[m[33m)[m
+Author: Denise <dviltes@fi.uba.ar>
+Date:   Thu Sep 19 23:08:25 2024 -0300
+
+    sube informe del checkpoint 1
+
+[33mcommit a2d89e9b358ff8bf61ab6c4cdc94754a5b8e1e83[m
+Author: Sebas García <sebgarcia@fi.uba.ar>
+Date:   Sun Sep 15 13:03:45 2024 -0300
+
+    Version 10 de la simulacion
+
+[33mcommit 5eb15030ac03e71a9769b6cabd37112cf1cd59f0[m
+Author: Denise <dviltes@fi.uba.ar>
+Date:   Fri Sep 13 10:26:22 2024 -0300
+
+    actualiza el pcb
+
+[33mcommit 6a80617fcb0ad65b796b4526645868604f1162c3[m
+Author: Denise <dviltes@fi.uba.ar>
+Date:   Fri Sep 13 00:34:58 2024 -0300
+
+    sube el esquematico del pcb
+
+[33mcommit 9f8c27a317c7c3c3a706f3533bcb253ae967a59c[m
+Author: Denise <dviltes@fi.uba.ar>
+Date:   Thu Sep 12 21:36:11 2024 -0300
+
+    Update Simulacion - v.6.asc
+    
+    separa en bloques los opamps para facilitar pasarlo a kicad
+
+[33mcommit 3ab56f10d95c739aea2af6dc1202b5bc7bf6b0d5[m
+Author: Denise <dviltes@fi.uba.ar>
+Date:   Wed Sep 11 23:08:24 2024 -0300
+
+    sube datashets y sube primer intento con kicad, hay que cambiar los operaciones y vincularlos con un pin, lo mismo con las fuentes
+
+[33mcommit 15f253bc00d3555961be3b1a5ea31df3b76ee301[m
+Author: Denise <dviltes@fi.uba.ar>
+Date:   Wed Sep 11 11:49:39 2024 -0300
+
+    Elimino archivos extras de spice
+
+[33mcommit a4d89c898924b1dced7584282dc1d67ce0f66d84[m
+Merge: b7b21ac 5d1b751
+Author: Denise <dviltes@fi.uba.ar>
+Date:   Wed Sep 11 11:45:10 2024 -0300
+
+    problemas de merge con git
+
+[33mcommit b7b21acf1b1f24dc116ae8ea1203881d2fee3542[m
+Author: Denise <dviltes@fi.uba.ar>
+Date:   Wed Sep 11 11:22:13 2024 -0300
+
+    sube todos para poder mergear
+
+[33mcommit 5d1b751487554de6aabb488ed1fe81492b162d6c[m
+Author: Diogenescz <dcornejoz@fi.uba.ar>
+Date:   Tue Sep 10 15:35:18 2024 -0300
+
+    Clavado 750mv
+
+[33mcommit 26d8644b050a1c82c8ab64d357c21b52c914b1f7[m
+Author: Sebas García <sebgarcia@fi.uba.ar>
+Date:   Sun Sep 8 23:44:17 2024 -0300
+
+    Versión 5 de la simulación - Ahora funciona :D
+
+[33mcommit cc122550067dd3df5d8c7fa64ef3dfa93429ee60[m
+Author: Sebas García <sebgarcia@fi.uba.ar>
+Date:   Sun Sep 8 00:50:22 2024 -0300
+
+    La simulación ahora funciona bien
+
+[33mcommit 6f02d301c9cff2dcff78a75c447ff1f56c66e629[m
+Author: Sebas García <sebgarcia@fi.uba.ar>
+Date:   Sat Sep 7 22:14:15 2024 -0300
+
+    Nueva versión del circuito 07/09
+
+[33mcommit b41e720c54a654e6d2c8e668a0e637fe4c705976[m
+Author: Denise <dviltes@fi.uba.ar>
+Date:   Sat Sep 7 18:49:19 2024 -0300
+
+    funciona la configuración básica
+
+[33mcommit 8f59477bfce57f7138c08ec2097d872cdfaa78d1[m
+Author: Denise <dviltes@fi.uba.ar>
+Date:   Sat Sep 7 17:58:03 2024 -0300
+
+    elimina archivo de simulacion viejo
+
+[33mcommit 75609fd0170e0e97a4e6995ae064f95734ab980e[m
+Author: Denise <dviltes@fi.uba.ar>
+Date:   Sat Sep 7 17:54:26 2024 -0300
+
+    agrega archivo de pruebas de fuente de corriente
+
+[33mcommit 37d3d96da8c692d15aefa780013c202c58e3cabd[m
+Author: Denise <dviltes@fi.uba.ar>
+Date:   Sat Sep 7 15:10:43 2024 -0300
+
+    sube últimos comentarios sobre la simulación
+
+[33mcommit 0250999c8b0a22ed03de4c621124a6fbf1978b61[m
+Author: Denise <dviltes@fi.uba.ar>
+Date:   Fri Sep 6 21:21:52 2024 -0300
+
+    agrega los cambios de la clase 9/6, ver comentarios en el archivo de spice
+
+[33mcommit 21ee0f1dc8a5c089e1c6a4b3c53ebc4f47b950d3[m
+Author: Diogenescz <dcornejoz@fi.uba.ar>
+Date:   Fri Sep 6 17:56:42 2024 -0300
+
+    nuevo esquematic
+
+[33mcommit 9e944df28ecb3674d78d0c6a59a4111062767277[m
+Author: Denise <dviltes@fi.uba.ar>
+Date:   Fri Sep 6 17:28:35 2024 -0300
+
+    Sube las hojas de datos del transistor de paso
+
+[33mcommit 032ce35f5c019141f1cd5a631e010a8ae258e806[m
+Author: Denise <dviltes@fi.uba.ar>
+Date:   Fri Sep 6 17:01:10 2024 -0300
+
+    sube primer intento de simulación
+
+[33mcommit f2667ec9a7be256e2a63217d5d25416cac832adb[m
+Author: Denise <dviltes@fi.uba.ar>
+Date:   Fri Aug 30 21:47:00 2024 -0300
+
+    subo el ltspice
+
+[33mcommit cb3186c0343306df29ae305f915199a2c17fd745[m
+Author: Denise <dviltes@fi.uba.ar>
+Date:   Fri Aug 30 14:38:48 2024 -0300
+
+    agrega el enunciado
+
+[33mcommit fe0c97370b87f51b076004c058a10cf31c6adfb7[m
+Author: Denise <dviltes@fi.uba.ar>
+Date:   Fri Aug 30 14:37:08 2024 -0300
+
+    agrega el gitignore
+
+[33mcommit 72081fc06e7a6e64ac50b9428f1cdda2c1c0ad1f[m
+Author: Denise <82343875+DeniseViltes@users.noreply.github.com>
+Date:   Fri Aug 30 14:10:33 2024 -0300
+
+    Update README.md
+
+[33mcommit e2b7ac9bc3089f7c8b57a76beedfd1913239e262[m
+Author: Denise <82343875+DeniseViltes@users.noreply.github.com>
+Date:   Fri Aug 30 14:09:52 2024 -0300
+
+    Initial commit
