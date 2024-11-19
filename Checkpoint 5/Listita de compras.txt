@@ -1,0 +1,8 @@
+capacitor tantalio 1u, 330n, 150n (x1)
+capacitor cerámico 100n (x2)
+capacitor electrolítico 10u (x2)
+mosfet IRLZ44N (nmos) (X2)
+resistencia carbón 1/4 W 390 (ver si hay)
+IR2104 (x1)
+socket dip 8 (quedan algunos)
+
