@@ -1,0 +1,73 @@
+* C:\Users\corne\OneDrive\Documentos\Diogenes\Facultad\C2\Buck_lazo_cerrado\Buck-lazo-cerrado.asc
+L§IL Vd Vcomp 700µ
+C1 Vcomp 0 150n
+R1 Vcomp 0 330
+V1 vdd 0 12
+R2 N007 N006 10
+C2 N005 Vd 0.33µ
+D1 vdd N005 D1n5822rl
+C3 vdd 0 1µ
+R3 N012 N010 10
+D2 Vd VCC3 D1n5822rl
+D3 0 Vd D1n5822rl
+XU4 N004 0 VCC -VCC N003 LM2901
+R5 VCC N003 5k
+R6 N003 N004 220k
+R7 N002 N004 5.1k
+R8 N001 N003 39k
+C4 N002 N001 100p
+R9 N008 N009 100k
+R10 N009 N011 100k
+R11 N013 0 100k
+R12 N015 0 2.5k
+R13 N013 Vref 100k
+R14 N015 N014 8.2k
+D4 0 pwm D
+V4 Vref 0 2.5
+V5 VCC 0 {vcc}
+V6 0 -VCC {vcc}
+V2 N014 0 12
+XIR2104 0 0 0 0 0 0 0 0 IR2104
+XU2 N013 N009 VCC -VCC N008 TL081
+XU3 0 N001 VCC -VCC N002 TL081
+XU1 VCC3 N007 Vd irlz44zsl
+XU5 Vd N012 0 irlz44zsl
+V3 N018 0 SINE(6.35 0.1 200k)
+R4 N019 N018 120
+R16 0 N019 78
+V7 VCC2 0 {vcc}
+V8 0 -VCC2 {vcc}
+V9 VCC3 0 {vcc}
+V10 0 -VCC3 {vcc}
+R15 N016 VCC2 60
+XU11 VCC2 N016 N017 irlz44zsl
+R28 N017 0 100
+XU6 0 0 0 0 0 LTC6702
+XU13 N010 N006 0 pwm vdd N005 Vd vdd IR2104
+XU12 N008 N002 VCC2 -VCC2 pwm LM2901
+R29 VCC pwm 10k
+R30 N011 Vcomp {R_var}
+R31 0 N011 100
+.model D D
+.lib C:\Users\corne\AppData\Local\LTspice\lib\cmp\standard.dio
+.lib IR2104.lib
+.lib 1N5822RL.LIB
+.option noopiter
+* .option gmin=1e-9
+.lib irlz44zsl.spi
+.param vcc 12
+.lib lm2901.lib
+.lib TL081.lib
+* Banco de Suplentes
+.tran 0 250u 0 5u
+.option cshunt 1e-30
+.option abstol 10p
+* Tomemos con pinzas lo de las .options\nSon para que anden más rápido las simulacioens
+.param R_var=207
+;step param R_var list  51 100 220
+.lib C:\Users\corne\OneDrive\Documentos\Diogenes\Facultad\C2\Buck_lazo_cerrado\irlz44zsl.spi
+.lib C:\Users\corne\OneDrive\Documentos\Diogenes\Facultad\C2\dce-g5-proyecto_integrador\Checkpoint 5\IR2104.lib
+.lib LTC3.lib
+.lib TL081.lib
+.backanno
+.end
