@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "Inductor_EE4012_Vertical")(type "KiCad")(uri "${KIPRJMOD}/Inductor_EE4012_Vertical.pretty")(options "")(descr ""))
+)
