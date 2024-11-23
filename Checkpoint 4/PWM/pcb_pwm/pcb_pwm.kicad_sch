@@ -3477,28 +3477,6 @@
 			)
 		)
 	)
-	(global_label "Vo"
-		(shape input)
-		(at 66.04 41.91 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "7b18e09f-3d9b-4d6f-8a9c-465b47e8816a")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 66.04 36.6872 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "Vsin"
 		(shape input)
 		(at 106.68 146.05 0)
@@ -5254,7 +5232,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D3.4mm_W2.1mm_P2.50mm"
+		(property "Footprint" "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
 			(at 85.09 76.5048 0)
 			(effects
 				(font
@@ -6538,7 +6516,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D3.4mm_W2.1mm_P2.50mm"
+		(property "Footprint" "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
 			(at 77.47 64.4652 0)
 			(effects
 				(font
