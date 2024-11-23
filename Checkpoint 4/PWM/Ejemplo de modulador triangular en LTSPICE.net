@@ -1,0 +1,43 @@
+* C:\Users\---\Desktop\DCE\dce-g5-proyecto_integrador\Checkpoint 4\PWM\Ejemplo de modulador triangular en LTSPICE.asc
+R5 N001 Va 39k
+V1 VCC 0 12
+R6 Va N002 220k
+R7 Vb N002 5k
+V2 N007 0 SINE(6.35 0.1 200k)
+C1 Vb N001 100p
+XU1 0 N001 VCC -VCC Vb TL081
+R13 N008 N007 120
+R14 0 N008 78
+XU4 N004 N003 VCC -VCC Vr TL081
+V3 Vref 0 2.5
+V4 0 -VCC 12
+R15 N004 N006 100k
+R16 0 N004 100k
+R17 N003 Vref 100k
+R18 Vr N003 100k
+V9 N005 0 12
+R19 N006 N005 8.2k
+R20 0 N006 2k
+XU7 N002 0 VCC -VCC Va LM2901
+XU8 Vr Vb VCC -VCC2 Vo LM2901
+R21 VCC Va 10k
+V10 VCC2 0 12
+V11 0 -VCC2 12
+R22 VCC2 Vo 500
+D1 0 Vo Dmur1560
+.model D D
+.lib C:\Users\---\Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 0 30u 14u uic
+.model IRF9540 PMOS(Level=3 Gamma=0 Delta=0 Eta=0 Theta=0 Kappa=0.2 Vmax=0 Xj=0
++ Tox=100n Uo=300 Phi=.6 Rs=64.15m Kp=10.18u W=1.5 L=2u
++ Vto=-3.646 Rd=62.45m Rds=444.4K Cbd=2.029n Pb=.8 Mj=.5 Fc=.5
++ Cgso=1.033n Cgdo=469.4p Rg=.3371 Is=54.08E-18 N=2 Tt=140n)
+.model 1N4002 D (Is=14.11n N=1.984 Rs=33.89E-3 Ikf=94.81 Xti=3 Eg=1.110 Cjo=51.17E-12)
+.lib lm2901.lib
+* R4 Aumentarla\nAumenta la ampl de la triang\nDismin la frec
+* R3 Aumentarla\nDisminuye la ampl de la triang\nAumenta la frec
+* C1 Aumentarla\n Aumenta la ampl de la triang\nDisminuye la frec
+.lib MUR1560.REV0.LIB
+.lib TL081.lib
+.backanno
+.end
