@@ -1795,6 +1795,12 @@
 		(uuid "3572ad15-f27b-4650-b682-f05cca9346e9")
 	)
 	(junction
+		(at 175.26 128.27)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "37d0f24d-078f-4939-9725-7965ea8b10fc")
+	)
+	(junction
 		(at 172.72 128.27)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2292,13 +2298,23 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 128.27) (xy 172.72 128.27)
+			(xy 184.15 128.27) (xy 175.26 128.27)
 		)
 		(stroke
 			(width 0.1524)
 			(type solid)
 		)
 		(uuid "95ad9836-b8d7-46c5-967d-c7a53f96ae9d")
+	)
+	(wire
+		(pts
+			(xy 175.26 128.27) (xy 172.72 128.27)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "99563409-fb72-4e30-8f0b-965c5a22257a")
 	)
 	(wire
 		(pts
@@ -3793,6 +3809,73 @@
 			(project ""
 				(path "/d91a5c26-4e18-475e-97e9-9a8dc3744660"
 					(reference "#GND03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 175.26 128.27 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "80fea8ee-0065-4cfd-a3d4-118bc4643108")
+		(property "Reference" "TP5"
+			(at 177.8 123.6979 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "GND"
+			(at 177.8 126.2379 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm"
+			(at 180.34 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 180.34 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 175.26 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "134cad47-08bf-402b-be83-739a6c75921f")
+		)
+		(instances
+			(project "pcb_buck"
+				(path "/c07dc6f8-4993-4f99-9fe5-e6b8a0415b6f"
+					(reference "TP5")
 					(unit 1)
 				)
 			)
