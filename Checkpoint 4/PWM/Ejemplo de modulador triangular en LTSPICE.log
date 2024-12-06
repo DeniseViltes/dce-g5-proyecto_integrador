@@ -2,21 +2,21 @@ Circuit: * C:\Users\---\Desktop\DCE\dce-g5-proyecto_integrador\Checkpoint 4\PWM\
 
 Per .tran options, skipping operating point for transient analysis.
 
-Date: Sat Nov 23 14:56:57 2024
-Total elapsed time: 1.638 seconds.
+Date: Wed Dec 04 18:20:07 2024
+Total elapsed time: 0.372 seconds.
 
 tnom = 27
 temp = 27
 method = modified trap
-totiter = 8569
-traniter = 8569
-tranpoints = 3223
-accept = 2554
-rejected = 669
+totiter = 8776
+traniter = 8776
+tranpoints = 3347
+accept = 2711
+rejected = 636
 matrix size = 255
 fillins = 120
 solver = Normal
-Thread vector: 122.5/87.9[4] 21.7/38.0[1] 46.2/41.9[2] 2.6/38.5[1]  2592/500
-Matrix Compiler1: 13.37 KB object code size  18.0/9.4/[2.2]
-Matrix Compiler2: 20.08 KB object code size  11.3/13.8/[3.1]
+Thread vector: 15.5/12.6[4] 7.5/4.8[4] 11.7/5.4[4] 0.8/3.0[1]  2592/500
+Matrix Compiler1: 13.37 KB object code size  7.5/3.9/[0.8]
+Matrix Compiler2: 20.08 KB object code size  4.3/6.1/[1.0]
 

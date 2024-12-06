@@ -1,0 +1,41 @@
+* C:\Users\---\Desktop\DCE\dce-g5-proyecto_integrador\Checkpoint 5\Buck-compensado\boost_average_CL.asc
+C1 out 0 100µF
+Rload out 0 {RLOAD}
+L1 N001 out 738µ
+XU1 vdd in N001 0 d CCM2 Ron=8m VD=0.5 RD=0.05
+XU2 N007 N004 VPOS 0 y LT1215
+C3 N006 N004 3.9nF
+C4 N004 N003 13nF
+R1 N003 y 8.6k
+R2 N005 N006 360
+R3 N005 N004 30k
+Vref1 N007 0 PWL(0 1.2 8m 1.2 8.1m 1.21) AC 0
+B1 d 0 V=limit(V(x), 0.01, 0.9)
+Vz1 x y AC 1
+R4 out N002 22.33k
+R5 N002 0 1k
+Vg1 VPOS 0 12 AC 1
+L2 N002 N005 1Meg
+V2 N008 0 AC 1
+C2 N002 N008 1Meg
+* Simulation directives
+.lib average.lib
+* Boost converter\naverage model
+* .ac dec 300 1 100k
+* .step param RLOAD list 8 20
+;dc Vduty 0.2 0.9 0.01
+.tran 0 12m 7m 1u
+.param TiempoMuerto 310n
+.param Duty (6.35/Vin)
+.param fsw  200k
+.param ton (Duty/fsw)
+.param Vin 36
+.param T (1/fsw)
+* .param Duty (6.35/Vin * (1+TiempoMuerto/T))
+.lib IR2104.lib
+.lib 1N5822RL.LIB
+* .tran 0 400u 0 uic
+.param RLOAD 330
+.lib LTC.lib
+.backanno
+.end

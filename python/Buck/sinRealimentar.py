@@ -84,8 +84,8 @@ operativo =r"C:\Users\---\Desktop\DCE\dce-g5-proyecto_integrador\Checkpoint 4\in
 # Is = 0.85
 # Rmax = Vs/Is
 # Lcr= L_critico(Rmax, D)
-Lcr[0] = 700*10**(-6)
-Lcr[1] = 700*10**(-6)
+Lcr[0] = 738*10**(-6)
+Lcr[1] = 738*10**(-6)
 Rcr = R_critico(Lcr, D)
 #
 #
