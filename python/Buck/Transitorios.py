@@ -8,59 +8,85 @@ def procesarPuntos(nombreArchivo):
     return x, y
 
 
+tiempo, vo_vin12_R_330 = procesarPuntos('resources/vo-vin12_R-330.txt')
+tiempo1, vo_vin12_R_20 = procesarPuntos('resources/vo-vin12_R-20.txt')
+tiempo2, vo_vin12_R_10 = procesarPuntos('resources/vo-vin12_R-10.txt')
+tiempo3, vo_vin12_R_4 = procesarPuntos('resources/vo-vin12_R-4.txt')
+tiempo4, transitorioLazoCerrado = procesarPuntos('resources/Buck-lazo-cerrado2.txt')
 
-tiempo, vf3_R10 = procesarPuntos('resources/transitorio-Vf3-R10.txt')
 
-tiempo2, vf5_R10 = procesarPuntos('resources/transitorio-Vf5-R10.txt')
-
-
-
-fig1, ax1 = plt.subplots()
+fig = plt.figure()
 plt.grid(True)
 
-ax1.set_xlabel('Tiempo [m s]')
-ax1.set_ylabel('Tensión [V]',color = 'darkorchid')
-plt.title('Respuesta temporal del lazo de tension')
+plt.xlabel('Tiempo [m s]')
+plt.ylabel('Tensión [V]',color = 'darkorchid')
+plt.title('Respuesta temporal del lazo cerrado, PWM + BUCK')
 
-plot_1 = ax1.plot(tiempo*10**3, vf3_R10,color='darkorchid',label = '$V_o = 3V$' ,linewidth=3,linestyle='dashed')
-
-ax2 = ax1.twinx()
-ax2.set_ylabel('Tensión [mV]',color = '#e377c2')
-plot_2 = ax2.plot(tiempo2*10**3, vf5_R10,color='#e377c2',label = '$V_o = 5V$',linewidth=1)
-
-lns = plot_1 + plot_2
-labels = [l.get_label() for l in lns]
-plt.legend(lns, labels, loc=0)
-
-plt.savefig('graficos/TransitoriosGananciaTension.png')
+plt.plot(tiempo4*10**3, transitorioLazoCerrado,color='darkorchid' ,linewidth=3)
 
 
-tiempo, Vlc_R6_8 = procesarPuntos('resources/transitorio-Vlc-R6.8.txt')
-tiempo2, Vlc_R4_4 = procesarPuntos('resources/transitorio-Vlc-R44.txt')
+plt.savefig('graficos/Transitorios.png')
 
 
 
-fig2, ax1 = plt.subplots()
+
+
+
+
+fig1 = plt.figure()
 plt.grid(True)
 
-ax1.set_xlabel('Tiempo [m s]')
-ax1.set_ylabel('Tensión [V]',color = 'darkorchid')
-plt.title('Respuesta temporal del lazo de corriente')
+plt.xlabel('Tiempo [m s]')
+plt.ylabel('Tensión [V]',color = 'darkorchid')
+plt.title('Respuesta temporal del lazo cerrado $V_{in}=12V$')
 
-plot_1 = ax1.plot(tiempo2*10**3, Vlc_R4_4,color='darkorchid',label = '$V_o = 3V$',linewidth=3,linestyle='dashed')
+plt.plot(tiempo*10**3, vo_vin12_R_330,color='darkorchid',label = '$R_{load}= 330\Omega$' ,linewidth=3)
+plt.plot(tiempo1*10**3, vo_vin12_R_20,color='hotpink',label = '$R_{load}= 20\Omega$' ,linewidth=3)
+plt.plot(tiempo2*10**3, vo_vin12_R_10,color='crimson',label = '$R_{load}= 10\Omega$' ,linewidth=3)
+plt.plot(tiempo3*10**3, vo_vin12_R_4,color='indigo',label = '$R_{load}= 4\Omega$' ,linewidth=3)
 
-ax2 = ax1.twinx()
-ax2.set_ylabel('Tensión [V]',color = '#e377c2')
-plot_2 = ax2.plot(tiempo*10**3, Vlc_R6_8,color='#e377c2',label = '$V_o = 5V$' ,linewidth=1)
+plt.xlim([0,1])
 
-lns = plot_1 + plot_2
-labels = [l.get_label() for l in lns]
-plt.legend(lns, labels, loc=0)
+plt.savefig('graficos/TransitoriosGananciaTension-Vin_12.png')
 
-plt.savefig('graficos/TransitoriosGananciaCorriente.png')
+tiempo0, vo_vin12_R_330_SC = procesarPuntos('resources/vo-vin12_R-330-SINCOMPENSAR.txt')
+
+fig3 = plt.figure()
+plt.grid(True)
+
+plt.xlabel('Tiempo [m s]')
+plt.ylabel('Tensión [V]',color = 'darkorchid')
+plt.title('Respuesta temporal del lazo cerrado $V_{in}=12V$')
+
+plt.plot(tiempo*10**3, vo_vin12_R_330,color='darkorchid',label = 'Compensado' ,linewidth=3)
+plt.plot(tiempo0*10**3,vo_vin12_R_330_SC,color='hotpink',label = 'Sin Compensar' ,linewidth=3)
+
+
+plt.legend(loc='best')
+
+plt.savefig('graficos/comparacinTransitorioAntesYDespues.png')
 
 
 
 
+tiempo, vo_vin36_R_330 = procesarPuntos('resources/vo-vin36_R-330.txt')
+tiempo1, vo_vin36_R_20 = procesarPuntos('resources/vo-vin36_R-20.txt')
+tiempo2, vo_vin36_R_10 = procesarPuntos('resources/vo-vin36_R-10.txt')
+tiempo3, vo_vin36_R_4 = procesarPuntos('resources/vo-vin36_R-4.txt')
+
+
+fig2 = plt.figure()
+plt.grid(True)
+
+plt.xlabel('Tiempo [m s]')
+plt.ylabel('Tensión [V]',color = 'darkorchid')
+plt.title('Respuesta temporal del lazo cerrado $V_{in}=36V$')
+
+plt.plot(tiempo*10**3, vo_vin36_R_330,color='darkorchid',label = '$R_{load}= 330\Omega$' ,linewidth=3)
+plt.plot(tiempo1*10**3, vo_vin36_R_20,color='hotpink',label = '$R_{load}= 20\Omega$' ,linewidth=3)
+plt.plot(tiempo2*10**3, vo_vin36_R_10,color='crimson',label = '$R_{load}= 10\Omega$' ,linewidth=3)
+plt.plot(tiempo3*10**3, vo_vin36_R_4,color='indigo',label = '$R_{load}= 4\Omega$' ,linewidth=3)
+plt.xlim([0,1])
+plt.savefig('graficos/TransitoriosGananciaTension-Vin_36.png')
 plt.show()
 

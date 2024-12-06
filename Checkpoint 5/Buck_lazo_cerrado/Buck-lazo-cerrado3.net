@@ -1,0 +1,64 @@
+* C:\Users\---\Desktop\DCE\dce-g5-proyecto_integrador\Checkpoint 5\Buck_lazo_cerrado\Buck-lazo-cerrado3.asc
+L§IL Vd Vcomp 700µ
+C1 Vcomp 0 150n
+R1 Vcomp 0 330
+V1 vdd 0 12
+R2 N007 N006 10
+C2 N005 Vd 0.33µ
+D1 vdd N005 D1n5822rl
+C3 vdd 0 1µ
+R3 N013 N009 10
+D2 Vd VCC3 D1n5822rl
+D3 0 Vd D1n5822rl
+XU4 N004 0 VCC -VCC N003 LM2901
+R5 VCC N003 3.3k
+R6 N003 N004 180k
+R7 N002 N004 18k
+R8 N001 N003 39k
+C4 N002 N001 220p
+D4 0 pwm D
+V4 Vref 0 2.5
+V5 VCC 0 {vcc}
+V6 0 -VCC {vcc}
+XU3 0 N001 VCC -VCC N002 TL081
+V7 VCC2 0 {vcc}
+V8 0 -VCC2 {vcc}
+V9 VCC3 0 {vcc}
+V10 0 -VCC3 {vcc}
+XU13 N009 N006 0 pwm vdd N005 Vd vdd IR2104
+XU12 N008 N002 VCC2 -VCC2 pwm LM2901
+R29 VCC pwm 1k
+R30 N012 Vcomp {R_var}
+R31 0 N012 100
+M1 VCC3 N007 Vd Vd IRFZ44N
+M2 Vd N013 0 0 IRFZ44N
+XU7 Vref N010 VPOS 0 N008 LT1215
+C5 N014 N010 2.2n
+C6 N010 N011 22n
+R17 N011 N008 2k2
+R18 N012 N014 220
+R19 N012 N010 2k2
+.model D D
+.lib C:\Users\---\AppData\Local\LTspice\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\Users\---\AppData\Local\LTspice\lib\cmp\standard.mos
+.lib IR2104.lib
+.lib 1N5822RL.LIB
+.option noopiter
+* .option gmin=1e-9
+.lib irlz44zsl.spi
+.param vcc 12
+.lib lm2901.lib
+.lib TL081.lib
+.tran 0 400u 0 5u
+.option cshunt 1e-30
+.option abstol 10p
+* Tomemos con pinzas lo de las .options\nSon para que anden más rápido las simulacioens
+.param R_var=207
+;step param R_var list  51 100 220
+.lib C:\Users\---\Desktop\DCE\dce-g5-proyecto_integrador\Checkpoint 5\Buck_lazo_cerrado\IR2104.lib
+.lib LTC.lib
+.lib TL081.lib
+.backanno
+.end

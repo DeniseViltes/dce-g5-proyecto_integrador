@@ -1,11 +1,11 @@
 LTspice 24.0.12 for Windows
 Circuit: * C:\Users\---\Desktop\DCE\dce-g5-proyecto_integrador\Checkpoint 5\Buck-compensado\buck_average_CL.asc
-Start Time: Fri Dec  6 11:33:16 2024
+Start Time: Fri Dec  6 18:26:38 2024
 solver = Normal
 Maximum thread count: 4
-tnom = 27
-temp = 27
-method = modified trap
+
+
+
 Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
 Starting Gmin stepping
 Gmin = 10
@@ -13,23 +13,33 @@ Gmin = 1.07374
 Gmin = 0.115292
 Gmin = 0.0123794
 Gmin = 0.00132923
-vernier = 0.5
-vernier = 0.25
-vernier = 0.125
-vernier = 0.0625
-Gmin = 0.00100083
-vernier = 0.03125
-vernier = 0.015625
-vernier = 0.0078125
-vernier = 0.00390625
-vernier = 0.00195312
-Gmin = 0.00100083
-vernier = 0.000976562
-vernier = 0.000488281
+Gmin = 0.000142725
+Gmin = 1.5325e-05
+Gmin = 1.6455e-06
+Gmin = 1.76685e-07
+Gmin = 1.89714e-08
+Gmin = 2.03704e-09
+Gmin = 2.18725e-10
+Gmin = 2.34854e-11
+Gmin = 2.52173e-12
+Gmin = 2.70769e-13
 Gmin = 0
 Gmin stepping succeeded in finding the operating point.
 
 Ignoring empty pin current: Ix(u1:5)
 Ignoring empty pin current: Ix(u1:5)
-Total elapsed time: 0.230 seconds.
+.step rload=4
+
+
+
+.step rload=10
+
+
+
+.step rload=20
+tnom = 27
+temp = 27
+method = modified trap
+.step rload=330
+Total elapsed time: 0.531 seconds.
 

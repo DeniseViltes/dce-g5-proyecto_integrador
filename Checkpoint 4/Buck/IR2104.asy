@@ -5,7 +5,7 @@ WINDOW 0 0 -72 Bottom 2
 WINDOW 3 0 72 Top 2
 SYMATTR Prefix X
 SYMATTR Value IR2104
-SYMATTR ModelFile C:\users\Denise.Viltes\OneDrive - Toyota Argentina S.A\Documentos\dce-g5-proyecto_integrador-main\dce-g5-proyecto_integrador-main\Checkpoint 4\Buck\IR2104.lib
+SYMATTR ModelFile C:\Users\---\Desktop\DCE\dce-g5-proyecto_integrador\Checkpoint 4\Buck\IR2104.lib
 PIN 64 48 RIGHT 8
 PINATTR PinName LO
 PINATTR SpiceOrder 1

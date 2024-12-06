@@ -23,69 +23,78 @@ def procesarPuntos2VA(nombreArchivo):
 
 # RL5,Vo5,Io5=procesarPuntos('resources/stepRL5V.txt')
 # RL3,Vo3,Io3=procesarPuntos('resources/stepRL3V.txt')
-R_carga,Vo,Io=procesarPuntos('resources/mediciones/rectaCArga.txt')
+# RL,Vo_simu,Io=procesarPuntos('resources/mediciones/rectaCargaSimu.txt')
+R_carga,Vo,Io=procesarPuntos('resources/mediciones/rectaCarga.txt')
 
 
 # Rectas de carga
 
 
-fig1 = plt.figure()
+fig1, ax1 = plt.subplots()
 plt.grid(True)
 
-plt.xlabel('RL [$\Omega$]')
-plt.ylabel('Tensión de salida[V]')
-plt.title('Recta de carga ')
-
-plt.xlim([0,15])
-# plt.plot(RL5, Vo5, color='darkorchid', label = 'Simulación',linewidth=3)
-plt.plot(R_carga, Vo, color='skyblue', label = 'Medición',linewidth=3)
+ax1.set_xlabel('RL [$\Omega$]')
+ax1.set_ylabel('Tensión de salida[V]',color ='darkorchid')
+plt.title('Recta de carga')
 
 
-plt.axvline(x=6.8, color='skyblue', linestyle='--')
-plt.text(8,2, '$6,8 \Omega$', color='r', fontsize=10, ha='right')
-plt.legend()
-plt.savefig(r'C:\Users\---\Desktop\DCE\dce-g5-proyecto_integrador\python\Buck\graficos\rectasDeCarga.png')
+plot_1 = ax1.plot(R_carga, Vo, color='darkorchid', label = 'Tensión',linewidth=3)
 
 
+ax2 = ax1.twinx()
+ax2.set_ylabel('Corriente [A]',color = '#e377c2')
+plot_2 = ax2.plot(R_carga, Io, color='#e377c2', label = 'Corriente',linewidth=3)
 
-#
-#
+lns = plot_1 + plot_2
+labels = [l.get_label() for l in lns]
+plt.legend(lns, labels, loc=0)
+plt.savefig(r'C:\Users\---\Desktop\DCE\dce-g5-proyecto_integrador\python\Buck\graficos\Recta_de_Carga.png')
+
+
 # Rectas de linea
 
+Vreg_medida, Vo_medida = procesarPuntos2VA('resources/mediciones/rectaLinea.txt')
+# Vreg5, Vo5 = procesarPuntos2VA('resources/RtaLinea5.txt')
 
-Vreg_medida5, Vo_medida5 = procesarPuntos2VA('resources/mediciones/regulación-de-linea5.txt')
-Vreg5, Vo5 = procesarPuntos2VA('resources/RtaLinea5.txt')
 
 
-Vreg_medida3, Vo_medida3 = procesarPuntos2VA('resources/mediciones/regulación-de-linea3.txt')
-Vreg3, Vo3 = procesarPuntos2VA('resources/RtaLinea3.txt')
 
 fig5 = plt.figure()
 plt.grid(True)
 
 plt.xlabel('Tensión de entrada [V]')
 plt.ylabel('Tensión de salida[V]')
-plt.title('Rectas de Linea para Vo= 5V')
-plt.plot(Vreg5, Vo5,color='darkorchid',label = 'Simulación',linewidth=3)
-plt.plot(Vreg_medida5, Vo_medida5, color='skyblue', label = 'Medición',linewidth=3)
+plt.title('Regulación de Linea ')
+# plt.plot(Vreg5, Vo5,color='darkorchid',label = 'Simulación',linewidth=3)
+plt.plot(Vreg_medida, Vo_medida, color='skyblue', label = 'Medición',linewidth=3)
 # plt.xlim([3,10])
 plt.legend()
-plt.savefig(r'C:\Users\---\Desktop\DCE\dce-g5-proyecto_integrador\Checkpoint 3\graficos/rectasDeLinea5.png')
+plt.savefig(r'C:\Users\---\Desktop\DCE\dce-g5-proyecto_integrador\python\Buck\graficos\rectasDeLinea.png')
+
+
+
+
+
+# duty
+
+Vdd, duty = procesarPuntos2VA('resources/mediciones/duty.txt')
 
 fig6 = plt.figure()
 plt.grid(True)
 
 plt.xlabel('Tensión de entrada [V]')
-plt.xlabel('Tensión de entrada [V]')
-plt.title('Rectas de Linea para Vo= 3')
-plt.plot(Vreg3, Vo3,color='darkorchid',label = 'Simulación',linewidth=3)
-plt.plot(Vreg_medida3, Vo_medida3, color='skyblue', label = 'Medición',linewidth=3)
-
+plt.ylabel('Duty Cicle')
+plt.title('Duty Cicle vs Tensión de entrada ')
+# plt.plot(Vreg5, Vo5,color='darkorchid',label = 'Simulación',linewidth=3)
+plt.plot(Vdd,duty, color='darkorchid',linewidth=3)
 # plt.xlim([3,10])
-plt.legend()
-plt.savefig(r'C:\Users\---\Desktop\DCE\dce-g5-proyecto_integrador\Checkpoint 3\graficos/rectasDeLinea3.png')
+plt.savefig(r'C:\Users\---\Desktop\DCE\dce-g5-proyecto_integrador\python\Buck\graficos\Recta_de_linea.png')
 
-#
+
+
+
+
+
 # # Potencia
 #
 # RL5,Pl5,Ptip5=procesarPuntos('resources/mediciones/potencia5.txt')

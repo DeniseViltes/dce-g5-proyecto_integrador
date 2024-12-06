@@ -1,6 +1,6 @@
 LTspice 24.0.12 for Windows
 Circuit: * C:\Users\---\Desktop\DCE\dce-g5-proyecto_integrador\Checkpoint 5\Buck-compensado\buck_average_CL_noCompensado.asc
-Start Time: Fri Dec  6 10:53:32 2024
+Start Time: Fri Dec  6 14:44:17 2024
 solver = Normal
 Maximum thread count: 4
 tnom = 27
@@ -26,5 +26,5 @@ Source stepping succeeded in finding the operating point.
 
 Ignoring empty pin current: Ix(u1:5)
 Ignoring empty pin current: Ix(u1:5)
-Total elapsed time: 0.174 seconds.
+Total elapsed time: 1.055 seconds.
 
